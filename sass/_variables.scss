@@ -1,0 +1,100 @@
+$gray-300: #F1F1F4 !default;
+$gray-400: #EBEBEF !default;
+$gray-500: #E3E3E8 !default;
+$gray-600: #B0B0BE !default;
+$gray-700: #9595A8 !default;
+$gray-800: #7B7B92 !default;
+$gray-900: #58586A !default;
+$black: #31313B !default;
+
+$dark: #31313B !default;
+
+$red: #EA2727 !default;
+$green: #3FB044 !default;
+
+$light: #ffffff !default;
+
+$body-bg: #D8D7DC !default;
+$body-color: #31313B !default;
+
+$link-color: #1B6595 !default;
+$link-hover-color: $link-color !default;
+
+$primary: #FA6705 !default;
+$secondary: #FFE9D6 !default;
+
+$theme-colors: () !default;
+
+$theme-colors: map-merge(
+                (
+                        "cta": #017CCC,
+                        "grey-300": $gray-300,
+                        "grey-400": $gray-400,
+                        "grey-500": $gray-500,
+                        "grey-600": $gray-600,
+                        "grey-700": $gray-700,
+                        "grey-800": $gray-800,
+                        "grey-900": $gray-900,
+                        "link": $link-color,
+                        "ghost": #E3E3E8,
+                ),
+                $theme-colors
+);
+
+$font-family-sans-serif: 'Lato', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Lato", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$headings-font-family: "Prompt", sans-serif !default;
+$headings-font-weight: 600 !default;
+/*$headings-margin-bottom:      0;*/
+
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+
+$h1-font-size: $font-size-base * 3 !default;
+$h2-font-size: $font-size-base * 2.125 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$input-btn-padding-y: 1rem + 0.0625rem !default;
+$input-btn-padding-x: 1rem !default;
+$btn-font-family: "Prompt", sans-serif !default;
+$btn-font-size: .75rem !default;
+$btn-line-height: $btn-font-size !default;
+
+$input-btn-padding-y-sm: 0.8125rem !default;
+$input-btn-padding-x-sm: 0.75rem !default;
+$btn-font-size-sm: .6875rem !default;
+$btn-line-height-sm: $btn-font-size-sm !default;
+
+$input-btn-padding-y-lg: 1.3125rem - 0.0625rem !default;
+$input-btn-padding-x-lg: 1.5rem !default;
+$btn-font-size-lg: .875rem !default;
+$btn-line-height-lg: $btn-font-size-lg !default;
+
+$btn-border-radius: $input-btn-padding-y * 2 + $btn-font-size !default;
+$btn-border-radius-lg: $input-btn-padding-y-lg * 2 + $btn-font-size-lg !default;
+$btn-border-radius-sm: $input-btn-padding-y-sm * 2 + $btn-font-size-sm !default;
+
+$input-line-height: 1.375;
+$input-font-size: 0.9375rem;
+$input-padding-y: 0.793rem;
+$input-padding-x: 0.75rem;
+$input-border-radius: 0.5rem;
+$input-border-color: #E3E3E8 !default;
+
+$input-line-height-sm: 1.429;
+$input-font-size-sm: 0.9375rem;
+$input-padding-y-sm: 0.518rem;
+$input-padding-x-sm: 0.75rem;
+$input-border-radius-sm: 0.5rem;
+
+$tooltip-opacity: 0.95;
+$tooltip-bg: $black;
+$tooltip-border-radius: 0.125rem;
+$tooltip-font-size: 1.0625rem;
+$tooltip-padding-y: 0.5rem;
+$tooltip-padding-x: 1rem;
+
+$border-radius: 0.5rem;
+

@@ -1,0 +1,490 @@
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-s {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.icon-l {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.icon-xl {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.icon-social-size {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.icon-flag-size {
+  width: 1rem;
+  height: 1rem;
+}
+
+.icon-category-size {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.icon-fill-dark {
+  background-color: $dark;
+}
+
+.icon-fill-white {
+  background-color: $white;
+}
+
+.icon-fill-gray-500 {
+  background-color: $gray-500;
+}
+
+.icon-24-7 {
+  -webkit-mask-image: url("../img/icons/24-7.svg");
+  mask-image: url("../img/icons/24-7.svg");
+}
+
+.icon-add-to-bag {
+  -webkit-mask-image: url("../img/icons/add-to-bag.svg");
+  mask-image: url("../img/icons/add-to-bag.svg");
+}
+
+.icon-arrow-L {
+  -webkit-mask-image: url("../img/icons/arrow-L.svg");
+  mask-image: url("../img/icons/arrow-L.svg");
+}
+
+.icon-arrow-R {
+  -webkit-mask-image: url("../img/icons/arrow-R.svg");
+  mask-image: url("../img/icons/arrow-R.svg");
+}
+
+.icon-arrow-up {
+  -webkit-mask-image: url("../img/icons/arrow-up.svg");
+  mask-image: url("../img/icons/arrow-up.svg");
+}
+
+.icon-arrow-follow {
+  -webkit-mask-image: url("../img/icons/arrow-follow.svg");
+  mask-image: url("../img/icons/arrow-follow.svg");
+}
+
+.icon-born {
+  -webkit-mask-image: url("../img/icons/born.svg");
+  mask-image: url("../img/icons/born.svg");
+}
+
+.icon-building {
+  -webkit-mask-image: url("../img/icons/building.svg");
+  mask-image: url("../img/icons/building.svg");
+}
+
+.icon-bullet {
+  -webkit-mask-image: url("../img/icons/bullet.svg");
+  mask-image: url("../img/icons/bullet.svg");
+}
+
+.icon-certificate {
+  -webkit-mask-image: url("../img/icons/certificate.svg");
+  mask-image: url("../img/icons/certificate.svg");
+}
+
+.icon-chat {
+  -webkit-mask-image: url("../img/icons/chat.svg");
+  mask-image: url("../img/icons/chat.svg");
+}
+
+.icon-chemical {
+  -webkit-mask-image: url("../img/icons/chemical.svg");
+  mask-image: url("../img/icons/chemical.svg");
+}
+
+.icon-close-mini {
+  -webkit-mask-image: url("../img/icons/close-mini.svg");
+  mask-image: url("../img/icons/close-mini.svg");
+}
+
+.icon-close {
+  -webkit-mask-image: url("../img/icons/close.svg");
+  mask-image: url("../img/icons/close.svg");
+}
+
+.icon-code {
+  -webkit-mask-image: url("../img/icons/code.svg");
+  mask-image: url("../img/icons/code.svg");
+}
+
+.icon-complects {
+  -webkit-mask-image: url("../img/icons/complects.svg");
+  mask-image: url("../img/icons/complects.svg");
+}
+
+.icon-deep-search {
+  -webkit-mask-image: url("../img/icons/deep-search.svg");
+  mask-image: url("../img/icons/deep-search.svg");
+}
+
+.icon-distributors {
+  -webkit-mask-image: url("../img/icons/distributors.svg");
+  mask-image: url("../img/icons/distributors.svg");
+}
+
+.icon-document {
+  -webkit-mask-image: url("../img/icons/document.svg");
+  mask-image: url("../img/icons/document.svg");
+}
+
+.icon-download {
+  -webkit-mask-image: url("../img/icons/download.svg");
+  mask-image: url("../img/icons/download.svg");
+}
+
+.icon-dropdown-close {
+  -webkit-mask-image: url("../img/icons/dropdown-close.svg");
+  mask-image: url("../img/icons/dropdown-close.svg");
+}
+
+.icon-dropdown-open {
+  -webkit-mask-image: url("../img/icons/dropdown-open.svg");
+  mask-image: url("../img/icons/dropdown-open.svg");
+}
+
+.icon-electronics {
+  -webkit-mask-image: url("../img/icons/electronics.svg");
+  mask-image: url("../img/icons/electronics.svg");
+}
+
+.icon-email {
+  -webkit-mask-image: url("../img/icons/email.svg");
+  mask-image: url("../img/icons/email.svg");
+}
+
+.icon-employed {
+  -webkit-mask-image: url("../img/icons/employed.svg");
+  mask-image: url("../img/icons/employed.svg");
+}
+
+.icon-exporters {
+  -webkit-mask-image: url("../img/icons/exporters.svg");
+  mask-image: url("../img/icons/exporters.svg");
+}
+
+.icon-help {
+  -webkit-mask-image: url("../img/icons/help.svg");
+  mask-image: url("../img/icons/help.svg");
+}
+
+.icon-innovation {
+  -webkit-mask-image: url("../img/icons/innovation.svg");
+  mask-image: url("../img/icons/innovation.svg");
+}
+
+.icon-language {
+  -webkit-mask-image: url("../img/icons/language.svg");
+  mask-image: url("../img/icons/language.svg");
+}
+
+.icon-link {
+  -webkit-mask-image: url("../img/icons/link.svg");
+  mask-image: url("../img/icons/link.svg");
+}
+
+.icon-machines {
+  -webkit-mask-image: url("../img/icons/machines.svg");
+  mask-image: url("../img/icons/machines.svg");
+}
+
+.icon-managment {
+  -webkit-mask-image: url("../img/icons/managment.svg");
+  mask-image: url("../img/icons/managment.svg");
+}
+
+.icon-manufacturers {
+  -webkit-mask-image: url("../img/icons/manufacturers.svg");
+  mask-image: url("../img/icons/manufacturers.svg");
+}
+
+.icon-medicine {
+  -webkit-mask-image: url("../img/icons/medicine.svg");
+  mask-image: url("../img/icons/medicine.svg");
+}
+
+.icon-menu {
+  -webkit-mask-image: url("../img/icons/menu.svg");
+  mask-image: url("../img/icons/menu.svg");
+}
+
+.icon-minus {
+  -webkit-mask-image: url("../img/icons/minus.svg");
+  mask-image: url("../img/icons/minus.svg");
+}
+
+.icon-new-AI {
+  -webkit-mask-image: url("../img/icons/new-AI.svg");
+  mask-image: url("../img/icons/new-AI.svg");
+}
+
+.icon-new-design {
+  -webkit-mask-image: url("../img/icons/new-design.svg");
+  mask-image: url("../img/icons/new-design.svg");
+}
+
+.icon-new-more {
+  -webkit-mask-image: url("../img/icons/new-more.svg");
+  mask-image: url("../img/icons/new-more.svg");
+}
+
+.icon-new-tools {
+  -webkit-mask-image: url("../img/icons/new-tools.svg");
+  mask-image: url("../img/icons/new-tools.svg");
+}
+
+.icon-open {
+  -webkit-mask-image: url("../img/icons/open.svg");
+  mask-image: url("../img/icons/open.svg");
+}
+
+.icon-other-side {
+  -webkit-mask-image: url("../img/icons/other side.svg");
+  mask-image: url("../img/icons/other side.svg");
+}
+
+.icon-phone {
+  -webkit-mask-image: url("../img/icons/phone.svg");
+  mask-image: url("../img/icons/phone.svg");
+}
+
+.icon-photo {
+  -webkit-mask-image: url("../img/icons/photo.svg");
+  mask-image: url("../img/icons/photo.svg");
+}
+
+.icon-placeholder {
+  -webkit-mask-image: url("../img/icons/placeholder.svg");
+  mask-image: url("../img/icons/placeholder.svg");
+}
+
+.icon-premium {
+  -webkit-mask-image: url("../img/icons/premium.svg");
+  mask-image: url("../img/icons/premium.svg");
+}
+
+.icon-pricing {
+  -webkit-mask-image: url("../img/icons/pricing.svg");
+  mask-image: url("../img/icons/pricing.svg");
+}
+
+.icon-profile {
+  -webkit-mask-image: url("../img/icons/profile.svg");
+  mask-image: url("../img/icons/profile.svg");
+}
+
+.icon-providers {
+  -webkit-mask-image: url("../img/icons/providers.svg");
+  mask-image: url("../img/icons/providers.svg");
+}
+
+.icon-raw-materials {
+  -webkit-mask-image: url("../img/icons/raw materials.svg");
+  mask-image: url("../img/icons/raw materials.svg");
+}
+
+.icon-saved {
+  -webkit-mask-image: url("../img/icons/saved.svg");
+  mask-image: url("../img/icons/saved.svg");
+}
+
+.icon-search-by-photo {
+  -webkit-mask-image: url("../img/icons/search by photo.svg");
+  mask-image: url("../img/icons/search by photo.svg");
+}
+
+.icon-search {
+  -webkit-mask-image: url("../img/icons/search.svg");
+  mask-image: url("../img/icons/search.svg");
+}
+
+.icon-security {
+  -webkit-mask-image: url("../img/icons/security.svg");
+  mask-image: url("../img/icons/security.svg");
+}
+
+.icon-sort {
+  -webkit-mask-image: url("../img/icons/sort.svg");
+  mask-image: url("../img/icons/sort.svg");
+}
+
+.icon-tick {
+  -webkit-mask-image: url("../img/icons/tick.svg");
+  mask-image: url("../img/icons/tick.svg");
+}
+
+.icon-time {
+  -webkit-mask-image: url("../img/icons/time.svg");
+  mask-image: url("../img/icons/time.svg");
+}
+
+.icon-vehicle {
+  -webkit-mask-image: url("../img/icons/vehicle.svg");
+  mask-image: url("../img/icons/vehicle.svg");
+}
+
+.icon-world {
+  -webkit-mask-image: url("../img/icons/world.svg");
+  mask-image: url("../img/icons/world.svg");
+}
+
+.icon-worldwide {
+  -webkit-mask-image: url("../img/icons/worldwide.svg");
+  mask-image: url("../img/icons/worldwide.svg");
+}
+
+.icon-zoom {
+  -webkit-mask-image: url("../img/icons/zoom.svg");
+  mask-image: url("../img/icons/zoom.svg");
+}
+
+.icon-facebook {
+  background-image: url("../img/icons/social/facebook.svg");
+}
+
+.icon-linkedin {
+  background-image: url("../img/icons/social/linkedin.svg");
+}
+
+.icon-twitter {
+  background-image: url("../img/icons/social/twitter.svg");
+}
+
+.icon-xing {
+  background-image: url("../img/icons/social/xing.svg");
+}
+
+.icon-AU {
+  background-image: url("../img/icons/flags/AU.svg");
+}
+
+.icon-BE {
+  background-image: url("../img/icons/flags/BE.svg");
+}
+
+.icon-BL {
+  background-image: url("../img/icons/flags/BL.svg");
+}
+
+.icon-DE {
+  background-image: url("../img/icons/flags/DE.svg");
+}
+
+.icon-GB {
+  background-image: url("../img/icons/flags/GB.svg");
+}
+
+.icon-IT {
+  background-image: url("../img/icons/flags/IT.svg");
+}
+
+.icon-JA {
+  background-image: url("../img/icons/flags/JA.svg");
+}
+
+.icon-SW {
+  background-image: url("../img/icons/flags/SW.svg");
+}
+
+.icon-apparel-and-fashion {
+  background-image: url("../img/icons/category/apparel-and-fashion.svg");
+}
+
+.icon-associations-and-agencies {
+  background-image: url("../img/icons/category/associations-and-agencies.svg");
+}
+
+.icon-business-services {
+  background-image: url("../img/icons/category/business-services.svg");
+}
+
+.icon-chemical-and-pharma {
+  background-image: url("../img/icons/category/chemical-and-pharma.svg");
+}
+
+.icon-company-equipment {
+  background-image: url("../img/icons/category/company-equipment.svg");
+}
+
+.icon-construction {
+  background-image: url("../img/icons/category/construction.svg");
+}
+
+.icon-electrical-engineering {
+  background-image: url("../img/icons/category/electrical-engineering.svg");
+}
+
+.icon-food-and-agriculture {
+  background-image: url("../img/icons/category/food-and-agriculture.svg");
+}
+
+.icon-home-and-garden {
+  background-image: url("../img/icons/category/home-and-garden.svg");
+}
+
+.icon-machinery {
+  background-image: url("../img/icons/category/machinery.svg");
+}
+
+.icon-measuring-and-optics {
+  background-image: url("../img/icons/category/measuring-and-optics.svg");
+}
+
+.icon-medical-and-laboratory {
+  background-image: url("../img/icons/category/medical-and-laboratory.svg");
+}
+
+.icon-minerals-and-materials {
+  background-image: url("../img/icons/category/minerals-and-materials.svg");
+}
+
+.icon-office-supplies {
+  background-image: url("../img/icons/category/office-supplies.svg");
+}
+
+.icon-security-and-protection {
+  background-image: url("../img/icons/category/security-and-protection.svg");
+}
+
+.icon-sport-leisure {
+  background-image: url("../img/icons/category/sport-leisure.svg");
+}
+
+.icon-transport-and-packaging {
+  background-image: url("../img/icons/category/transport-and-packaging.svg");
+}
+
+.icon-used-equipment {
+  background-image: url("../img/icons/category/used-equipment.svg");
+}
+
+.icon-vehicles {
+  background-image: url("../img/icons/category/vehicles.svg");
+}
+
+.icon-vendors-parts {
+  background-image: url("../img/icons/category/vendors-parts.svg");
+}
+
+.icon-warehouse-equipment {
+  background-image: url("../img/icons/category/warehouse-equipment.svg");
+}
+
+.icon-workshop-tools {
+  background-image: url("../img/icons/category/workshop-tools.svg");
+}

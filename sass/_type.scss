@@ -1,0 +1,116 @@
+h1, .h1 {
+  line-height: 110%;
+}
+
+h2, .h2 {
+  line-height: 120%;
+}
+
+h3, .h3 {
+  line-height: 115%;
+}
+
+h4, .h4 {
+  font-weight: 500;
+  line-height: 110%;
+}
+
+h5, .h5 {
+  line-height: 120%;
+}
+
+h6, .h6 {
+  line-height: 125%;
+}
+
+.subtitle-l, .subtitle-m {
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.subtitle-l { @include font-size($font-size-base * 1.25); }
+.subtitle-m { @include font-size($font-size-base * 1.125); }
+
+.body-l {
+  font-style: normal;
+  font-weight: normal;
+  @include font-size($font-size-base * 1.25);
+  line-height: 1.75rem;
+}
+
+.body-m {
+  font-style: normal;
+  font-weight: normal;
+  @include font-size($font-size-base * 1.0625);
+  line-height: 150%;
+}
+
+.body-s {
+  font-style: normal;
+  font-weight: normal;
+  @include font-size($font-size-base * 0.9375);
+  line-height: 145%;
+}
+
+.body-xs {
+  font-style: normal;
+  font-weight: 500;
+  @include font-size($font-size-base * 0.8125);
+  line-height: 140%;
+}
+
+.body-heading-l {
+  font-style: normal;
+  font-weight: normal;
+  @include font-size($font-size-base * 1.25);
+  line-height: 1.75rem;
+  letter-spacing: -0.02em;
+}
+
+.body-heading-m {
+  font-style: normal;
+  font-weight: bold;
+  @include font-size($font-size-base * 1.125);
+  line-height: 1.25rem;
+}
+
+.body-heading-s {
+  font-style: normal;
+  font-weight: bold;
+  @include font-size($font-size-base * 1);
+  line-height: 125%;
+}
+
+.body-heading-xs {
+  font-style: normal;
+  font-weight: 500;
+  @include font-size($font-size-base * 0.8125);
+  line-height: 120%;
+}
+
+.body-underline-m, .body-underline-s, .body-underline-xs {
+  text-decoration-line: underline;
+}
+
+.body-underline-m {
+  font-style: normal;
+  font-weight: normal;
+  @include font-size($font-size-base * 1.0625);
+  line-height: 140%;
+  letter-spacing: -0.02em;
+}
+
+.body-underline-s {
+  font-style: normal;
+  font-weight: bold;
+  @include font-size($font-size-base * 1);
+  line-height: 125%;
+}
+
+.body-underline-xs {
+  font-style: normal;
+  font-weight: bold;
+  @include font-size($font-size-base * 0.8125);
+  line-height: 120%;
+}

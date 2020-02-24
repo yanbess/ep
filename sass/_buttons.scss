@@ -1,0 +1,190 @@
+.btn {
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  $icon-box-size: 1.125rem;
+
+  &.btn-icon {
+    position: relative;
+    padding-left: $input-btn-padding-x * 2 + $icon-box-size;
+
+    > .icon {
+      left: $input-btn-padding-x;
+      position: absolute;
+      width: $icon-box-size;
+      height: $icon-box-size;
+      top: (($input-btn-padding-y * 2 + $btn-line-height) / 2) - ($icon-box-size / 2);
+    }
+  }
+
+  &.btn-icon-right {
+    padding-right: $input-btn-padding-x * 2 + $icon-box-size;
+    padding-left: $input-btn-padding-x;
+
+    > .icon {
+      right: $input-btn-padding-x;
+      left: auto;
+    }
+  }
+
+  &.btn-filter-tag {
+    $padding-y: 0.4375rem;
+    $line-height: 1rem;
+
+    position: relative;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.8125rem;
+    line-height: $line-height;
+    padding: $padding-y 2rem;
+    border-radius: 0.25rem;
+    text-transform: none;
+    color: $black;
+    font-family: $font-family-sans-serif;
+    //padding-left: $input-btn-padding-x * 2 + $icon-box-size;
+
+    > .icon {
+      position: absolute;
+      top: (($padding-y * 2 + $line-height) / 2) - ($icon-box-size / 2);
+
+      &.btn-filter-tag-left {
+        left: $input-btn-padding-x / 2;
+      }
+
+      &.btn-filter-tag-right {
+        right: $input-btn-padding-x / 2;
+      }
+
+      &.icon-flag-size {
+        $icon-box-size: 1rem;
+        width: $icon-box-size;
+        height: $icon-box-size;
+        top: (($padding-y * 2 + $line-height) / 2) - ($icon-box-size / 2);
+      }
+    }
+  }
+}
+
+
+.btn-lg {
+  letter-spacing: 0.06em;
+  $font-size-y-fix: 0.0625rem;
+  padding-top: $input-btn-padding-y-lg + $font-size-y-fix;
+  padding-bottom: $input-btn-padding-y-lg - $font-size-y-fix;
+
+  &.btn-icon {
+    $icon-box-size: 1.5rem;
+
+    > .icon {
+      width: $icon-box-size;
+      height: $icon-box-size;
+      top: ((($input-btn-padding-y-lg * 2 + $btn-line-height-lg) / 2) - ($icon-box-size / 2)) - $font-size-y-fix;
+    }
+
+    &.btn-icon-right {
+      padding-right: $input-btn-padding-x-lg + $icon-box-size + $input-btn-padding-x-lg;
+
+      > .icon {
+        right: $input-btn-padding-x-lg;
+        left: auto;
+      }
+    }
+  }
+}
+
+.btn-sm {
+  letter-spacing: 0.1em;
+  $font-size-y-fix: 0.0625rem;
+  padding-top: $input-btn-padding-y-sm + $font-size-y-fix;
+
+  &.btn-icon {
+    $icon-box-size: 1.125rem;
+
+    > .icon {
+      width: $icon-box-size;
+      height: $icon-box-size;
+      top: (($input-btn-padding-y-sm * 2 + $btn-line-height-sm) / 2) - ($icon-box-size / 2);
+    }
+
+    &.btn-icon-right {
+      padding-right: $input-btn-padding-y-sm + $icon-box-size + $input-btn-padding-y-sm;
+
+      > .icon {
+        right: $input-btn-padding-y-sm;
+        left: auto;
+      }
+    }
+  }
+}
+
+.btn-cta {
+  &:hover,
+  &:focus {
+    background: #0068AB;
+  }
+}
+
+.btn-primary {
+  &:hover,
+  &:focus {
+    background: #C85204;
+  }
+}
+
+.btn-outline-ghost {
+  color: $black;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    color: $primary;
+    background: transparent;
+    border-color: $primary;
+  }
+}
+
+.btn-link {
+  @include button-variant(transparent, transparent, transparent, transparent, transparent, transparent);
+}
+
+.btn-link {
+  color: $dark;
+  text-decoration: none;
+
+  @include hover() {
+    color: $primary;
+    text-decoration: none;
+    box-shadow: none !important;
+    > .icon {
+      background-color: $primary;
+      @include transition($btn-transition);
+    }
+  }
+
+  &:focus,
+  &.focus {
+    text-decoration: none;
+    color: $primary;
+    box-shadow: none !important;
+
+    > .icon {
+      background-color: $primary;
+      @include transition($btn-transition);
+    }
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    color: $primary;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none !important;
+
+    > .icon {
+      background-color: $primary;
+      @include transition($btn-transition);
+    }
+  }
+}

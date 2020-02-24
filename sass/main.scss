@@ -1,0 +1,28 @@
+/*@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";*/
+
+
+@import "variables";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "reboot";
+@import "type";
+@import "buttons";
+@import "icons";
+@import "card";
+@import "tooltip";
+
+.logo-text-s {
+  width: 8.5rem;
+  height: 2.5rem;
+  background-image: url("../img/logo-text-s.png");
+  background-repeat: no-repeat;
+}
+
+.logo-text {
+  width: 12.5rem;
+  height: 4.0625rem;
+  background-image: url("../img/logo-text.png");
+  background-repeat: no-repeat;
+}
