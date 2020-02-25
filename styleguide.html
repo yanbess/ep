@@ -249,18 +249,26 @@
         <form>
             <div class="form-group">
                 <label for="exampleInputEmail1">Label for input S</label>
-                <input type="email" class="form-control  form-control-sm" id="exampleInputEmail1"
-                       aria-describedby="emailHelp">
+                <input type="email" class="form-control  form-control-sm has-error" id="exampleInputEmail1"
+                       aria-describedby="emailHelp" placeholder="Text">
                 <small id="emailHelp" class="form-text text-danger">We'll never share your email with anyone
                     else.</small>
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail2">Label for input M</label>
-                <input type="email" class="form-control" id="exampleInputEmail2">
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Text">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Text"></textarea>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+                <label class="custom-control-label" for="customCheck1">Custom checkbox</label>
+            </div>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="switch1" checked="">
+                <label class="custom-control-label" for="switch1">Toggle this custom switch</label>
             </div>
         </form>
     </div>
@@ -330,7 +338,8 @@
                             <i class="icon icon-fill-gray-500 icon-s icon-time"></i>
                             10.11.2018 23:00
                         </p>
-                        <p class="card-text body-heading-s">Verbesserung der Lieferstruktur deutscher Produkte an EPCOS AG.</p>
+                        <p class="card-text body-heading-s">Verbesserung der Lieferstruktur deutscher Produkte an EPCOS
+                            AG.</p>
                     </div>
                 </div>
             </div>
@@ -352,9 +361,14 @@
                         </div>
                         <div class="card-company-list-info-right">
                             <a href="#" class="mr-4 body-xs card-company-list-further-products">weitere Produkte (8)</a>
-                            <a href="#" class="btn btn-icon btn-icon-right btn-outline-ghost btn-sm card-company-list-details-btn">DETAILS<i class="icon icon-arrow-follow icon-fill-dark"></i></a>
+                            <a href="#"
+                               class="btn btn-icon btn-icon-right btn-outline-ghost btn-sm card-company-list-details-btn">DETAILS<i
+                                    class="icon icon-arrow-follow icon-fill-dark"></i></a>
                         </div>
-                        <div class="card-company-list-text body-s">Das Familienunternehmen BENEDICT aus Österreich erzeugt Niederspannungs-Schaltgeräte die sich durch besondere Merkmale von ihren Mitbewerbern abheben. Erfahrungen aus jahrzehntelangem Forschen und Ent...</div>
+                        <div class="card-company-list-text body-s">Das Familienunternehmen BENEDICT aus Österreich
+                            erzeugt Niederspannungs-Schaltgeräte die sich durch besondere Merkmale von ihren
+                            Mitbewerbern abheben. Erfahrungen aus jahrzehntelangem Forschen und Ent...
+                        </div>
                     </div>
                 </div>
             </div>
@@ -370,14 +384,17 @@
                             <i class="icon icon-fill-gray-500 icon-s icon-time"></i>
                             10.11.2018 23:00
                         </p>
-                        <a href="#" class="card-news-preview-title body-heading-s">Verbesserung der Lieferstruktur deutscher Produkte an EPCOS AG.</a>
+                        <a href="#" class="card-news-preview-title body-heading-s">Verbesserung der Lieferstruktur
+                            deutscher Produkte an EPCOS AG.</a>
                     </div>
                 </div>
             </div>
             <div class="row no-gutters">
                 <div class="col">
                     <div class="card-body body-s card-news-preview-text">
-                        Facilisis arcu, congue massa quisque. Aliquam adipiscing vitae morbi feugiat senectus arcu. Accumsan, praesent sed neque dolor ut duis egestas. Tempor leo viverra sem in. Viverra vulputate sem scelerisque porttitor eget ligula sed risus...
+                        Facilisis arcu, congue massa quisque. Aliquam adipiscing vitae morbi feugiat senectus arcu.
+                        Accumsan, praesent sed neque dolor ut duis egestas. Tempor leo viverra sem in. Viverra vulputate
+                        sem scelerisque porttitor eget ligula sed risus...
                     </div>
                 </div>
             </div>
@@ -390,14 +407,115 @@
                 <div class="col">
                     <div class="card-body">
                         <p class="card-product-preview-title body-heading-m">Temperatursensoren</p>
-                        <div class="body-s">Facilisis arcu, congue massa quisque. Aliquam adipiscing vitae morbi feugiat senectus arcu. Accumsan, praesent sed neque dolor ut duis egestas. Tempor leo viverra sem in.</div>
+                        <div class="body-s">Facilisis arcu, congue massa quisque. Aliquam adipiscing vitae morbi feugiat
+                            senectus arcu. Accumsan, praesent sed neque dolor ut duis egestas. Tempor leo viverra sem
+                            in.
+                        </div>
                     </div>
                 </div>
                 <div>
                     <div class="card-body">
-                        <a href="#" class="btn btn-icon btn-icon-right btn-outline-ghost btn-sm card-company-list-details-btn">DETAILS<i class="icon icon-arrow-follow icon-fill-dark"></i></a>
+                        <a href="#"
+                           class="btn btn-icon btn-icon-right btn-outline-ghost btn-sm card-company-list-details-btn">DETAILS<i
+                                class="icon icon-arrow-follow icon-fill-dark"></i></a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-4">
+        <a href="#" class="tab-item">PRODUKTE</a>
+        <!--<div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown button
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>-->
+    </div>
+    <div class="m-4">
+        <div class="header">
+            <div class="header-body">
+                <div class="header-body-logo logo-text-s"></div>
+                <div class="header-catalog-button">
+                    <i class="icon icon-fill-dark icon-menu"></i>
+                    <i class="icon icon-fill-dark icon-close"></i>
+                    <div class="header-catalog-button-text body-heading-s">Katalog</div>
+                </div>
+                <div class="header-search">
+                    <div class="input-group">
+                        <input type="text" class="form-control header-search-field" placeholder="Suche..."
+                               aria-label="Suche..." aria-describedby="button-search">
+                        <div class="input-group-append">
+                            <button class="btn btn-sm btn-primary" type="button" id="button-search"><i
+                                    class="icon icon-fill-white icon-s icon-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-login">
+                    <i class="icon icon-fill-dark icon-profile"></i>
+                    <div class="header-login-text">EINLOGGEN</div>
+                </div>
+                <div class="header-register">
+                    <button type="button" class="btn btn-cta">REGISTRIEREN</button>
+                </div>
+                <div class="header-language">
+                    <i class="icon icon-flag-size icon-DE"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-4">
+        <div class="footer">
+            <div class="footer-body">
+                <div class="footer-col">
+                    <h6 class="footer-col-title">Allgemein</h6>
+                    <div class="footer-col-links">
+                        <a href="#">AGB & Nutzungsbedingungen</a><br>
+                        <a href="#">Datenschutz & Cookies</a><br>
+                        <a href="#">Impressum</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h6 class="footer-col-title">Mitglieder</h6>
+                    <div class="footer-col-links">
+                        <a href="#">Einloggen</a><br>
+                        <a href="#">Registrieren</a><br>
+                        <a href="#">Newsletter abonnieren</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h6 class="footer-col-title">Fragen?</h6>
+                    <div class="footer-col-links">
+                        <a href="#">Über uns</a><br>
+                        <a href="#">Anfrage</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-contacts-title">Exportpages International GmbH</div>
+                    <div class="footer-col-contacts-text">
+                        Becker-Göring-Straße 15<br>
+                        76307 Karlsbad<br>
+                        Germany
+                    </div>
+                    <div class="footer-col-social">
+                        <a href="#" class="icon icon-facebook-bg"></a>
+                        <a href="#" class="icon icon-twitter-bg"></a>
+                        <a href="#" class="icon icon-linkedin-bg"></a>
+                        <a href="#" class="icon icon-xing-bg"></a>
+                    </div>
+                </div>
+                <div class="footer-copyrigh">Alle Rechte vorbehalten © 2019.</div>
+            </div>
+        </div>
+    </div>
+    <div class="m-4">
+        <div class="submenu-listing">
+            <div class="submenu-listing-body">
             </div>
         </div>
     </div>

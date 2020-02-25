@@ -1,0 +1,12 @@
+.form-control {
+  &:hover {
+    border-color: $gray-700;
+  }
+  &:focus {
+    border-color: $cta;
+  }
+
+  &.has-error {
+    border-color: $danger;
+  }
+}

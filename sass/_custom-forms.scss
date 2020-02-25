@@ -1,0 +1,92 @@
+/*.custom-checkbox {
+  .custom-control-label {
+    font-size: 0.9375rem;
+    line-height: 145%;
+    font-style: normal;
+    font-weight: normal;
+    color: $gray-900;
+  }
+}
+
+.custom-radio {
+  .custom-control-label {
+    font-size: 0.9375rem;
+    line-height: 145%;
+    font-style: normal;
+    font-weight: normal;
+    color: $gray-900;
+  }
+}
+
+.custom-switch {
+  .custom-control-label {
+    font-size: 0.9375rem;
+    line-height: 145%;
+    font-style: normal;
+    font-weight: normal;
+    color: $gray-900;
+  }
+}*/
+
+.custom-control {
+  padding-left: 2rem;
+}
+
+.custom-checkbox {
+  .custom-control-label {
+    font-size: 0.9375rem;
+    line-height: 1.8rem;
+    font-style: normal;
+    font-weight: normal;
+    color: $gray-900;
+
+    $box-size: 1.25rem;
+    $left: -2rem;
+
+    &::before {
+      width: $box-size;
+      height: $box-size;
+      left: $left;
+    }
+
+    &::after {
+      width: $box-size;
+      height: $box-size;
+      left: $left;
+    }
+  }
+}
+
+.custom-switch {
+  padding-left: 3.125rem;
+
+  .custom-control-label {
+    font-size: 0.9375rem;
+    line-height: 1.8rem;
+    font-style: normal;
+    font-weight: normal;
+    color: $gray-900;
+
+    &::before {
+      width: 2.35rem;
+      height: 1.5rem;
+      left: -3.125rem;
+      border-radius: 1.5rem;
+    }
+
+    &::after {
+      width: 1rem;
+      height: 1rem;
+      left: -2.8rem;
+      top: 0.45rem;
+    }
+  }
+
+
+}
+
+.custom-control-input {
+  &:checked ~ .custom-control-label {
+    color: $primary;
+  }
+}

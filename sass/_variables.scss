@@ -6,6 +6,7 @@ $gray-700: #9595A8 !default;
 $gray-800: #7B7B92 !default;
 $gray-900: #58586A !default;
 $black: #31313B !default;
+$cta: #017CCC !default;
 
 $dark: #31313B !default;
 
@@ -28,7 +29,7 @@ $theme-colors: () !default;
 
 $theme-colors: map-merge(
                 (
-                        "cta": #017CCC,
+                        "cta": $cta,
                         "grey-300": $gray-300,
                         "grey-400": $gray-400,
                         "grey-500": $gray-500,
@@ -99,3 +100,9 @@ $tooltip-padding-x: 1rem;
 
 $border-radius: 0.5rem;
 
+$input-focus-box-shadow: none !default;
+
+$input-color: $black !default;
+$input-placeholder-color: $gray-700 !default;
+
+$custom-checkbox-indicator-border-radius:       0.25rem !default;
