@@ -10,6 +10,7 @@
 @import "tooltip";
 @import "forms";
 @import "custom-forms";
+@import "custom";
 
 $content-width: 73.125rem;
 $content-bg: $white;
@@ -44,6 +45,15 @@ $content-bg: $white;
   font-family: "Prompt", sans-serif;
 
   &:hover {
+    color: $primary;
+    text-decoration: none;
+    border-bottom: 2px solid $primary;
+  }
+}
+
+.active {
+  .tab-item {
+    color: $primary;
     text-decoration: none;
     border-bottom: 2px solid $primary;
   }
@@ -52,7 +62,6 @@ $content-bg: $white;
 .header {
   background: $content-bg;
   width: 100%;
-  display: inline-block;
 
   .header-body {
     width: $content-width;
