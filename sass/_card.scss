@@ -15,6 +15,10 @@
   &.card-hover {
     &:hover {
       border-color: $primary;
+      
+      .card-news-preview-title {
+        color: $primary;
+      }
     }
   }
 
