@@ -19,18 +19,22 @@
   }
 
   &.card-category {
+    @extend .body-heading-s;
+    text-decoration: none;
+
+
     .card-category-col-image {
       width: 6rem;
       height: 5.5rem;
       margin: 0.9375rem;
       flex: 0 0 6rem;
       max-width: 6rem;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
-    .card-body {
-      .card-text {
-        font-weight: 600;
-      }
+    .card-text {
+      color: $body-color;
     }
   }
 
@@ -41,21 +45,32 @@
       margin: 0.9375rem;
       flex: 0 0 6rem;
       max-width: 6rem;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
     .card-body {
-      .card-text {
-        font-weight: 600;
+      .card-product-preview-title {
+        @extend .body-heading-m;
+      }
+
+      .card-product-preview-title-text {
+        @extend .body-s;
       }
     }
   }
 
   &.card-company {
+    @extend .body-xs;
+    text-decoration: none;
+
     .card-img-top {
       margin: 2rem auto;
       width: 10.875rem;
       height: 3rem;
       border-radius: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
     .card-body {
@@ -63,7 +78,7 @@
       padding-bottom: 1.5rem;
 
       .card-text {
-        color: #9595A8;
+        color: $gray-700;
         text-align: center;
         font-size: 0.8125rem;
         line-height: 0.875rem;
@@ -80,6 +95,8 @@
       border-radius: 0.5rem;
       flex: 0 0 7.5rem;
       max-width: 7.5rem;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
     .card-body {
@@ -87,7 +104,13 @@
     }
 
     .card-text {
+      @extend .body-heading-s;
+      text-decoration: none;
       color: $gray-900;
+
+      &:hover {
+        color: $primary;
+      }
     }
 
     .card-news-date {
@@ -108,9 +131,12 @@
 
     .card-company-list-col-image {
       width: 6.5rem;
+      height: 3.25rem;
       margin: 1.5rem;
       flex: 0 0 6.5rem;
       max-width: 6.5rem;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
     .card-company-list-col-body {
@@ -168,6 +194,7 @@
     .card-news-preview-title {
       color: $gray-900;
       text-decoration: none;
+
       &:hover {
         color: $primary;
       }
@@ -181,6 +208,8 @@
       border-radius: 0.5rem;
       flex: 0 0 7.5rem;
       max-width: 7.5rem;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
     .card-body {
