@@ -1,6 +1,6 @@
 .card {
+
   &.surface {
-    border: 0;
 
     &:hover,
     &:focus {
@@ -12,8 +12,30 @@
     }
   }
 
+  &.card-hover {
+    &:hover {
+      border-color: $primary;
+    }
+  }
+
   &.card-category {
     .card-category-col-image {
+      width: 6rem;
+      height: 5.5rem;
+      margin: 0.9375rem;
+      flex: 0 0 6rem;
+      max-width: 6rem;
+    }
+
+    .card-body {
+      .card-text {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &.card-product-preview {
+    .card-product-preview-col-image {
       width: 6rem;
       height: 5.5rem;
       margin: 0.9375rem;
@@ -46,10 +68,6 @@
         font-size: 0.8125rem;
         line-height: 0.875rem;
       }
-    }
-
-    &:hover {
-      border-color: $primary;
     }
   }
 
@@ -100,6 +118,7 @@
 
       .card-body {
         padding-left: 2rem;
+        padding-right: 2rem;
 
         .icon {
           margin-top: 0.08rem;
@@ -113,15 +132,75 @@
 
         .card-company-list-info-right {
           float: right;
-          .btn {
+          margin-top: -1.2rem;
+
+          .card-company-list-further-products {
+            font-style: normal;
+            font-weight: bold;
+          }
+
+          .card-company-list-details-btn {
             width: 8rem;
             text-align: left;
+
+            @include hover() {
+              background-color: $primary;
+              color: $white;
+              text-decoration: none;
+              box-shadow: none !important;
+              > .icon {
+                background-color: $white;
+                @include transition($btn-transition);
+              }
+            }
           }
         }
 
         .card-company-list-text {
           width: 100%;
         }
+      }
+    }
+  }
+
+  &.card-news-preview {
+
+    .card-news-preview-title {
+      color: $gray-900;
+      text-decoration: none;
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    .card-news-preview-col-image {
+      width: 7.5rem;
+      height: 7.5rem;
+      margin: 1rem;
+      margin-right: 0;
+      border-radius: 0.5rem;
+      flex: 0 0 7.5rem;
+      max-width: 7.5rem;
+    }
+
+    .card-body {
+      padding-left: 1rem;
+    }
+
+    .card-news-preview-text {
+      padding-top: 0;
+    }
+
+    .card-news-preview-date {
+      color: $gray-600;
+      margin-bottom: 0.75rem;
+      position: relative;
+      padding-left: 1.9375rem;
+
+      .icon {
+        position: absolute;
+        left: 0;
+
       }
     }
   }

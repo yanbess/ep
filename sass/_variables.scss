@@ -17,11 +17,12 @@ $light: #ffffff !default;
 $body-bg: #D8D7DC !default;
 $body-color: #31313B !default;
 
-$link-color: #1B6595 !default;
-$link-hover-color: $link-color !default;
-
 $primary: #FA6705 !default;
 $secondary: #FFE9D6 !default;
+
+$link-color: #1B6595 !default;
+$link-decoration: underline !default;
+$link-hover-color: $primary !default;
 
 $theme-colors: () !default;
 
