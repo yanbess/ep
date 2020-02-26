@@ -32,19 +32,25 @@ $content-box-body-width: 73.125rem;
 }
 
 .tab-item {
-  width: 9rem;
   height: 4rem;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
-  padding-top: 1.7rem;
+  padding: 1.5rem 2rem;
   background: #fff;
+  color: #7B7B92;
   text-align: center;
   font-family: "Prompt", sans-serif;
+  
+  @media(max-width: $content-box-body-width) {
+    padding: 1rem;
+  }
 
   &:hover {
     color: $primary;
@@ -260,7 +266,8 @@ $content-box-body-width: 73.125rem;
 
 .footer {
   @extend .content-box;
-
+  border-top: 1px solid #F1F1F4;
+  
   .footer-body {
     @extend .content-box-body;
     margin-top: 4rem;

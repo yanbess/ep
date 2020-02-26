@@ -9141,6 +9141,9 @@ h6, .h6 {
 .icon-fill-dark-blue {
   background-color: #1B6595; }
 
+.icon-fill-orange {
+  background-color: #FA6705; }
+
 .icon-fill-gray-500 {
   background-color: #E3E3E8; }
 
@@ -9768,7 +9771,9 @@ h6, .h6 {
 .company-header {
   margin-top: -4.375rem;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  border-bottom: 1px solid #EBEBEF;
+  font-weight: bold; }
   @media (max-width: 73.125rem) {
     .company-header {
       margin-top: -3rem; } }
@@ -9808,10 +9813,8 @@ h6, .h6 {
         .company-header .company-logo img {
           max-height: 2.625rem;
           max-width: 2.625rem; } }
-  .company-header .company-info {
-    font-weight: bold; }
-    .company-header .company-info .h3 {
-      margin: 1rem 0 3rem; }
+  .company-header .h3 {
+    margin: 1rem 0 3rem; }
   .company-header .icon-flag-size {
     height: 1.25rem;
     width: 1.25rem; }
@@ -9926,6 +9929,78 @@ h6, .h6 {
   .company-news > div {
     padding: 0 .375rem .75rem; }
 
+.company-info {
+  padding: 3rem 0 7.5rem;
+  background: #fff; }
+  .company-info .sidebar-info {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.125rem; }
+    @media (max-width: 73.125rem) {
+      .company-info .sidebar-info {
+        font-size: .875rem;
+        line-height: 1.45; } }
+    .company-info .sidebar-info li {
+      position: relative;
+      padding-left: 2.125rem;
+      margin: 0 0 1.5rem; }
+      @media (max-width: 73.125rem) {
+        .company-info .sidebar-info li {
+          display: block;
+          float: left;
+          margin: 0 3rem 2rem 0;
+          padding: 0; }
+          .company-info .sidebar-info li:last-child {
+            width: 100%;
+            margin: 0 0 2rem; } }
+      .company-info .sidebar-info li .icon {
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .company-info .sidebar-info li b {
+        display: block;
+        margin: 0 0 .5rem;
+        line-height: 1.25rem; }
+        @media (max-width: 73.125rem) {
+          .company-info .sidebar-info li b {
+            padding-left: 1.75rem; } }
+  .company-info .video-box {
+    display: block;
+    position: relative;
+    margin: 0 0 1.5rem; }
+    .company-info .video-box:after {
+      content: '';
+      display: block;
+      height: 1.5rem;
+      width: 1.5rem;
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      margin: -0.75rem 0 0 -0.75rem;
+      background: url(../img/play.svg) no-repeat center center;
+      background-size: contain; }
+    .company-info .video-box img {
+      max-width: 100%; }
+  .company-info .download-box {
+    border: 1px solid #EBEBEF;
+    border-radius: 4px;
+    padding: 1.5rem; }
+    .company-info .download-box p {
+      display: flex;
+      align-items: center; }
+      .company-info .download-box p:last-child {
+        margin: 0; }
+      .company-info .download-box p a {
+        display: flex;
+        align-items: center;
+        text-decoration: none; }
+      .company-info .download-box p .icon {
+        margin: 0 .5rem 0 0; }
+
+.dark-blue {
+  color: #1B6595; }
+
 .logo-text-s {
   width: 8.5rem;
   height: 2.5rem;
@@ -9939,19 +10014,24 @@ h6, .h6 {
   background-repeat: no-repeat; }
 
 .tab-item {
-  width: 9rem;
   height: 4rem;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
-  padding-top: 1.7rem;
+  padding: 1.5rem 2rem;
   background: #fff;
+  color: #7B7B92;
   text-align: center;
   font-family: "Prompt", sans-serif; }
+  @media (max-width: 73.125rem) {
+    .tab-item {
+      padding: 1rem; } }
   .tab-item:hover {
     color: #FA6705;
     text-decoration: none;
@@ -10091,40 +10171,42 @@ h6, .h6 {
       width: 2rem;
       height: 2rem; }
 
-.footer .footer-body {
-  margin-top: 4rem;
-  margin-bottom: 2.9375rem; }
-  .footer .footer-body .footer-col {
-    width: 25%;
-    float: left;
-    margin-bottom: 2rem; }
-    .footer .footer-body .footer-col .footer-col-title {
-      margin-bottom: 1.4375rem; }
-    .footer .footer-body .footer-col .footer-col-links a {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 0.9375rem;
-      line-height: 145%;
-      margin-bottom: 0.75rem;
-      display: inline-block; }
-    .footer .footer-body .footer-col .footer-col-contacts-title {
-      font-style: normal;
-      font-weight: 600;
-      font-size: 1rem;
-      line-height: 125%;
-      margin-bottom: 0.9375rem; }
-    .footer .footer-body .footer-col .footer-col-contacts-text {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 0.9375rem;
-      line-height: 1.8rem;
-      margin-bottom: 0.875rem; }
-    .footer .footer-body .footer-col .footer-col-social .icon {
-      width: 2rem;
-      height: 2rem;
-      margin-right: 0.5rem; }
-  .footer .footer-body .footer-copyrigh {
-    color: #7B7B92; }
+.footer {
+  border-top: 1px solid #F1F1F4; }
+  .footer .footer-body {
+    margin-top: 4rem;
+    margin-bottom: 2.9375rem; }
+    .footer .footer-body .footer-col {
+      width: 25%;
+      float: left;
+      margin-bottom: 2rem; }
+      .footer .footer-body .footer-col .footer-col-title {
+        margin-bottom: 1.4375rem; }
+      .footer .footer-body .footer-col .footer-col-links a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.9375rem;
+        line-height: 145%;
+        margin-bottom: 0.75rem;
+        display: inline-block; }
+      .footer .footer-body .footer-col .footer-col-contacts-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 125%;
+        margin-bottom: 0.9375rem; }
+      .footer .footer-body .footer-col .footer-col-contacts-text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.9375rem;
+        line-height: 1.8rem;
+        margin-bottom: 0.875rem; }
+      .footer .footer-body .footer-col .footer-col-social .icon {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.5rem; }
+    .footer .footer-body .footer-copyrigh {
+      color: #7B7B92; }
 
 .pagination-custom {
   width: 100%;

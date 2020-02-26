@@ -39,7 +39,7 @@
                     </ul>
                   </div>
               </div>
-              <div class="col-xl-6 company-info order-xl-0 order-1">
+              <div class="col-xl-6 order-xl-0 order-1">
                   <p class="h3 text-white d-none d-xl-block">
                       <i class="icon icon-flag-size icon-DE mr-3"></i>EPCOS AG
                   </p>
@@ -79,13 +79,13 @@
           </div>
           <ul class="company-nav">
               <li>
-                  <a href="#" class="tab-item">PRODUKTE</a>
+                  <a href="company-info.php" class="tab-item">Beschreibung</a>
               </li>
               <li>
-                  <a href="#" class="tab-item">Beschreibung</a>
+                  <a href="#" class="tab-item">PRODUKTE</a>
               </li>
               <li class="active">
-                <a href="#" class="tab-item">News</a>
+                <a href="company-news.php" class="tab-item">News</a>
               </li>
           </ul>
       </div>

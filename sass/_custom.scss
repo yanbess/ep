@@ -47,6 +47,8 @@ $content-box-body-width: 73.125rem;
   margin-top: -4.375rem;
   position: relative;
   z-index: 2;
+  border-bottom: 1px solid #EBEBEF;
+  font-weight: bold;
   
   @media(max-width: $content-box-body-width) {
     margin-top: -3rem;
@@ -97,12 +99,8 @@ $content-box-body-width: 73.125rem;
     }
   }
   
-  .company-info {
-    font-weight: bold;
-    
-    .h3 {
-      margin: 1rem 0 3rem;
-    }
+  .h3 {
+    margin: 1rem 0 3rem;
   }
      
   .icon-flag-size {
@@ -261,4 +259,107 @@ $content-box-body-width: 73.125rem;
   > div {
     padding: 0 .375rem .75rem;
   }
+}
+
+.company-info {
+  padding: 3rem 0 7.5rem;
+  background: #fff;
+  
+  .sidebar-info {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.125rem;
+    
+    @media (max-width: $content-box-body-width) {
+      font-size: .875rem;
+      line-height: 1.45;
+    }
+
+    li {
+      position: relative;
+      padding-left: 2.125rem;
+      margin: 0 0 1.5rem;
+
+      @media (max-width: $content-box-body-width) {
+        display: block;
+        float: left;
+        margin: 0 3rem 2rem 0;
+        padding: 0;
+        
+        &:last-child {
+          width: 100%;
+          margin: 0 0 2rem;
+        }
+      }
+      
+      .icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      b {
+        display: block;
+        margin: 0 0 .5rem;
+        line-height: 1.25rem;
+        
+        @media (max-width: $content-box-body-width) {
+          padding-left: 1.75rem;
+        }
+      }
+    }
+  }
+  
+  .video-box {
+    display: block;
+    position: relative;
+    margin: 0 0 1.5rem;
+    
+    &:after {
+      content: '';
+      display: block;
+      height: 1.5rem;
+      width: 1.5rem;
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      margin: -0.75rem 0 0 -0.75rem;
+      background: url(../img/play.svg) no-repeat center center;
+      background-size: contain;
+    }
+    
+    img {
+      max-width: 100%;
+    }
+  }
+  
+  .download-box {
+    border: 1px solid #EBEBEF;
+    border-radius: 4px;
+    padding: 1.5rem;
+    
+    p {
+      display: flex;
+      align-items: center;
+      
+      &:last-child {
+        margin: 0;
+      }
+      
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+      }
+      
+      .icon {
+        margin: 0 .5rem 0 0;
+      }
+    }
+  }
+}
+
+.dark-blue {
+  color: #1B6595;
 }
