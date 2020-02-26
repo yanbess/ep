@@ -9737,6 +9737,9 @@ h6, .h6 {
 .custom-control-input:checked ~ .custom-control-label {
   color: #FA6705; }
 
+img {
+  max-width: 100%; }
+
 .breadcrumb-wrapper {
   position: relative;
   background-repeat: no-repeat;
@@ -9980,23 +9983,24 @@ h6, .h6 {
       margin: -0.75rem 0 0 -0.75rem;
       background: url(../img/play.svg) no-repeat center center;
       background-size: contain; }
-    .company-info .video-box img {
-      max-width: 100%; }
-  .company-info .download-box {
-    border: 1px solid #EBEBEF;
-    border-radius: 4px;
-    padding: 1.5rem; }
-    .company-info .download-box p {
+
+.download-box {
+  border: 1px solid #EBEBEF;
+  border-radius: 4px;
+  padding: 1.5rem; }
+  .download-box.gray-bg {
+    background: #F1F1F4; }
+  .download-box p {
+    display: flex;
+    align-items: center; }
+    .download-box p:last-child {
+      margin: 0; }
+    .download-box p a {
       display: flex;
-      align-items: center; }
-      .company-info .download-box p:last-child {
-        margin: 0; }
-      .company-info .download-box p a {
-        display: flex;
-        align-items: center;
-        text-decoration: none; }
-      .company-info .download-box p .icon {
-        margin: 0 .5rem 0 0; }
+      align-items: center;
+      text-decoration: none; }
+    .download-box p .icon {
+      margin: 0 .5rem 0 0; }
 
 .dark-blue {
   color: #1B6595; }
@@ -10022,6 +10026,14 @@ h6, .h6 {
   .sidebar-filters form {
     display: none;
     padding: 1rem 0 0; } }
+
+.dots-list {
+  padding-left: 1rem;
+  margin: 0 0 1.5rem;
+  line-height: 1.45;
+  color: #58586A; }
+  .dots-list li:not(:last-child) {
+    margin: 0 0 .5rem; }
 
 .logo-text-s {
   width: 8.5rem;

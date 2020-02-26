@@ -91,41 +91,40 @@
             </div>
         </section>
         
-        <section class="company-products py-5">
+        <section class="company-product py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4">
-                        <div class="sidebar-filters">
-                            <p class="body-heading-m js-filters-toggle">
-                                <b>Produkte und Dienstleistungen <br>von EPCOS AG</b> 
-                                <i class="icon icon-fill-dark icon-s icon-dropdown-open"></i>
-                            </p>
-                            <form>
-                                <div class="custom-control custom-checkbox mb-2">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
-                                    <label class="custom-control-label" for="customCheck1">Alles (61)</label>
+                    <div class="col-xl-8 offset-xl-2">
+                        <p>
+                            <a href="company-products.php" class="btn btn-icon btn-link">
+                                <i class="icon icon-arrow-L icon-fill-dark"></i>Zurück zu allen PRODUKTEN
+                            </a>
+                        </p>
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="h4 mb-4">Tunnelwärmer (LinaTherm) von Krones AG</p>
+                                <img class="mb-4" src="img/product.jpg" alt="">
+                                <ul class="dots-list">
+                                    <li>Kompakter, einteiliger Wärmer, der die Behälter nach dem Abfüllen an den Taupunkt angleicht</li>
+                                    <li>Clean-Design-Bauweise in Edelstahl AISI 304Pumpen in Edelstahl-Ausführung</li>
+                                    <li>Langlebiges Kunststoff-Transportband Marathon Belt</li>
+                                    <li>Integriertes Wärmetauscher-System CHESS</li>
+                                    <li>Ein- und Auslauf auf je 1,2 Metern Höhe</li>
+                                </ul>
+                                <div class="download-box gray-bg">
+                                    <p>
+                                        <a class="text-primary" href="#">
+                                            <i class="icon icon-fill-orange icon-s icon-download"></i> Herunterladen
+                                        </a>
+                                    </p>
+                                    <p class="dark-blue">
+                                      <i class="icon icon-fill-dark-blue icon-s icon-document"></i> Tunnelwärmer (LinaTherm) von Krones AG
+                                    </p>
                                 </div>
-                                <div class="custom-control custom-checkbox mb-2">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                    <label class="custom-control-label" for="customCheck2">Aluminum-Elektrolytkondensa-toren (1)</label>
-                                </div>
-                                <div class="custom-control custom-checkbox mb-2">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                    <label class="custom-control-label" for="customCheck3">Blindleistungskondensatoren (1)</label>
-                                </div>
-                                <div class="custom-control custom-checkbox mb-2">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                    <label class="custom-control-label" for="customCheck4">Blindleistungsregler (1)</label>
-                                </div>
-                                <div class="custom-control custom-checkbox mb-2">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck5">
-                                    <label class="custom-control-label" for="customCheck5">Chipinduktivitäten (1)</label>
-                                </div>
-                            </form>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-8">
-                        <?php for($i = 0; $i < 9; $i++) { ?>
+                        <p class="h4 my-5">Mehr produkte:</p>
+                        <?php for($i = 0; $i < 3; $i++) { ?>
                         <div class="card card-product-preview card-hover mb-2">
                             <div class="row no-gutters">
                                 <div class="col card-product-preview-col-image" style="background-image: url('/img/products/image 2-1.jpg');"></div>
@@ -141,26 +140,12 @@
                                 </div>
                                 <div>
                                     <div class="card-body">
-                                        <a href="company-product.php" class="btn btn-icon btn-icon-right btn-outline-ghost btn-sm card-company-list-details-btn">DETAILS<i class="icon icon-arrow-follow icon-fill-dark"></i></a>
+                                        <a href="#" class="btn btn-icon btn-icon-right btn-outline-ghost btn-sm card-company-list-details-btn">DETAILS<i class="icon icon-arrow-follow icon-fill-dark"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <?php } ?>
-                        <div class="pagination-custom mt-4">
-                              <div class="pagination-custom-page pagination-custom-page-arrow pagination-custom-page-arrow-l">&nbsp;
-                                  <i class="icon icon-fill-dark icon-s icon-arrow-L"></i>
-                              </div>
-                              <a href="#" class="pagination-custom-page">1</a>
-                              <a href="#" class="pagination-custom-page">2</a>
-                              <a href="#" class="pagination-custom-page">3</a>
-                              <a href="#" class="pagination-custom-page">4</a>
-                              <div class="pagination-custom-page">...</div>
-                              <a href="#" class="pagination-custom-page">10</a>
-                              <a href="#" class="pagination-custom-page pagination-custom-page-arrow pagination-custom-page-arrow-r">&nbsp;
-                                  <i class="icon icon-fill-dark icon-s icon-arrow-R"></i>
-                              </a>
-                          </div>
                     </div>
                 </div>
             </div>
