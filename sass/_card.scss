@@ -15,6 +15,10 @@
   &.card-hover {
     &:hover {
       border-color: $primary;
+      
+      .card-news-preview-title {
+        color: $primary;
+      }
     }
   }
 
@@ -137,6 +141,7 @@
       max-width: 6.5rem;
       background-size: cover;
       background-repeat: no-repeat;
+      position: relative;
     }
 
     .card-company-list-col-body {
