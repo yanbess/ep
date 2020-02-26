@@ -82,7 +82,7 @@
                         <a href="company-info.php" class="tab-item">Beschreibung</a>
                     </li>
                     <li>
-                        <a href="#" class="tab-item">PRODUKTE</a>
+                        <a href="company-products.php" class="tab-item">PRODUKTE</a>
                     </li>
                     <li>
                       <a href="company-news.php" class="tab-item">News</a>

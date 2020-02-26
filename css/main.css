@@ -10001,6 +10001,28 @@ h6, .h6 {
 .dark-blue {
   color: #1B6595; }
 
+@media (max-width: 73.125rem) {
+  .sidebar-filters {
+    padding: 1rem;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin: 0 0 2rem; } }
+@media (max-width: 73.125rem) {
+  .sidebar-filters .js-filters-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0; } }
+.sidebar-filters .js-filters-toggle .icon {
+  display: none; }
+  @media (max-width: 73.125rem) {
+    .sidebar-filters .js-filters-toggle .icon {
+      display: block; } }
+@media (max-width: 73.125rem) {
+  .sidebar-filters form {
+    display: none;
+    padding: 1rem 0 0; } }
+
 .logo-text-s {
   width: 8.5rem;
   height: 2.5rem;

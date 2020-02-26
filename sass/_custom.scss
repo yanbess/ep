@@ -363,3 +363,36 @@ $content-box-body-width: 73.125rem;
 .dark-blue {
   color: #1B6595;
 }
+
+.sidebar-filters {
+  @media (max-width: $content-box-body-width) {
+    padding: 1rem;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin: 0 0 2rem;
+  }
+  
+  .js-filters-toggle {
+    @media (max-width: $content-box-body-width) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+    }
+
+    .icon {
+      display: none;
+      
+      @media (max-width: $content-box-body-width) {
+        display: block;
+      }
+    }
+  }
+
+  form {
+    @media (max-width: $content-box-body-width) {
+      display: none;
+      padding: 1rem 0 0;
+    }
+  }
+}
