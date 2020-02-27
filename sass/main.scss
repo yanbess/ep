@@ -119,9 +119,9 @@ $content-box-body-width: 73.125rem;
 
   .header-catalog-sublist {
     @extend .content-box;
-    display: none;
     position: absolute;
     top: 4.5rem + 6rem;
+    left: 0;
     z-index: 20;
     background: transparent;
 
@@ -214,11 +214,120 @@ $content-box-body-width: 73.125rem;
       }
 
       .header-language-mobile {
-
+        .header-language-mobile-close {
+          display: inline-block;
+        }
       }
 
       .header-catalog-mobile {
 
+      }
+
+      .tooltip {
+        .icon-close {
+          position: absolute;
+          top: 1rem;
+          right: 1.5rem;
+        }
+
+        &.header-language-tooltip-mobile {
+          display: none;
+          position: absolute;
+          top: 3.3rem;
+          margin-left: -8.25rem;
+          width: 100%;
+          opacity: 1;
+          cursor: default;
+          right: 0;
+
+          &.show {
+            display: block;
+          }
+
+          .arrow {
+            right: 1.6rem;
+
+            &::before {
+              border-bottom-color: #fff;
+            }
+          }
+
+          .tooltip-inner {
+            width: 100%;
+            max-width: none;
+            box-shadow: 0 16px 80px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.05);
+            background: #fff;
+            padding: 0.5rem 1.5rem;
+            color: $black;
+            border-radius: 0;
+
+            > ul {
+              padding: 0;
+              margin: 0;
+              list-style: none;
+
+
+              > li {
+                border-bottom: 1px solid #F1F1F4;
+
+                a {
+                  @extend .body-s;
+                  text-align: left;
+                  list-style: none;
+                  display: inline-block;
+                  width: 100%;
+                  position: relative;
+                  padding: 0.5rem 0;
+                  cursor: pointer;
+                  padding-left: 2rem;
+                  text-decoration: none;
+                  color: $black;
+
+                  &:hover {
+                    color: $cta;
+                  }
+                }
+
+                &:last-child {
+                  border: 0;
+                }
+
+                .icon-flag {
+                  position: absolute;
+                  left: 0;
+                  width: 1.25rem;
+                  height: 1.25rem;
+                }
+
+                .icon-tick {
+                  display: none;
+                  position: absolute;
+                  right: 0;
+                  top: 0.65rem;
+                  width: 1.125rem;
+                  height: 1.125rem;
+                  background-color: $cta;
+                }
+
+                &.header-language-list-active-item,
+                &:hover {
+                  a {
+                    color: $cta;
+                  }
+
+                  .icon-tick {
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+      .header-catalog-mobile-close {
+        display: none;
       }
 
       .header-logo-line {
@@ -252,6 +361,35 @@ $content-box-body-width: 73.125rem;
         padding-top: 1rem;
         float: left;
         margin-right: 1.75rem;
+        padding-bottom: 1rem;
+        cursor: pointer;
+        border: 1px solid transparent;
+
+        &:hover,
+        .header-catalog-button-active {
+          color: $primary;
+
+          .icon {
+            background-color: $primary;
+          }
+        }
+
+        &.header-catalog-button-active {
+          border-color: #EBEBEF;
+          box-sizing: border-box;
+          border-bottom: 0;
+          border-top-left-radius: 1rem;
+          border-top-right-radius: 1rem;
+          padding-bottom: 1.49rem;
+
+          .icon-menu {
+            display: none;
+          }
+
+          .icon-close {
+            display: block;
+          }
+        }
 
         .icon-menu {
           margin-right: 0.875rem;
@@ -301,12 +439,94 @@ $content-box-body-width: 73.125rem;
         }
       }
 
+      .header-search-box-mobile {
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        background: #fff;
+        top: 0;
+        bottom: 0;
+
+        .input-group {
+          position: absolute;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: stretch;
+          right: 4rem;
+          left: 0.5rem;
+          top: 0.5rem;
+          width: auto;
+        }
+
+        .header-search-box-mobile-close {
+          position: absolute;
+          top: 1.5rem;
+          right: 1.5rem;
+        }
+
+        input {
+          border-top-left-radius: 1.5rem;
+          border-bottom-left-radius: 1.5rem;
+          background: #F1F1F4;
+          padding-left: 1.5rem;
+        }
+
+        button {
+          width: 4rem;
+          height: 3rem;
+
+          .icon {
+            margin-left: -0.25rem;
+          }
+        }
+      }
+
       .header-login {
         margin-top: 1.5rem;
         height: 1.5rem;
         margin-right: 1.5rem;
         float: left;
         cursor: pointer;
+        position: relative;
+
+        .tooltip {
+          display: none;
+          position: absolute;
+          top: 2.3rem;
+          left: 50%;
+          margin-left: -8.25rem;
+          width: 16.5rem;
+          opacity: 1;
+          cursor: default;
+
+          &.show {
+            display: block;
+          }
+
+          .arrow {
+            left: 50%;
+
+            &::before {
+              border-bottom-color: #fff;
+            }
+          }
+
+          .tooltip-inner {
+            width: 100%;
+            max-width: none;
+            box-shadow: 0 16px 80px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.05);
+            background: #fff;
+            padding: 1.5rem;
+            color: $black;
+
+            .header-login-pass-forg-link {
+              font-style: normal;
+              font-weight: bold;
+              font-size: 0.8125rem;
+              line-height: 120%;
+            }
+          }
+        }
 
         @media (max-width: $content-box-body-width) {
           display: none;
@@ -353,6 +573,102 @@ $content-box-body-width: 73.125rem;
       .header-language {
         float: left;
         margin-top: 1.25rem;
+        cursor: pointer;
+        position: relative;
+
+        .tooltip {
+          display: none;
+          position: absolute;
+          top: 3.3rem;
+          margin-left: -8.25rem;
+          width: 12.5rem;
+          opacity: 1;
+          cursor: default;
+          right: -1rem;
+
+          &.show {
+            display: block;
+          }
+
+          .arrow {
+            right: 1.6rem;
+
+            &::before {
+              border-bottom-color: #fff;
+            }
+          }
+
+          .tooltip-inner {
+            width: 100%;
+            max-width: none;
+            box-shadow: 0 16px 80px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.05);
+            background: #fff;
+            padding: 0.5rem 1.5rem;
+            color: $black;
+            border-radius: 0.5rem;
+
+            > ul {
+              padding: 0;
+              margin: 0;
+              list-style: none;
+
+
+              > li {
+                border-bottom: 1px solid #F1F1F4;
+
+                a {
+                  @extend .body-s;
+                  text-align: left;
+                  list-style: none;
+                  display: inline-block;
+                  width: 100%;
+                  position: relative;
+                  padding: 0.5rem 0;
+                  cursor: pointer;
+                  padding-left: 2rem;
+                  text-decoration: none;
+                  color: $black;
+
+                  &:hover {
+                    color: $cta;
+                  }
+                }
+
+                &:last-child {
+                  border: 0;
+                }
+
+                .icon-flag {
+                  position: absolute;
+                  left: 0;
+                  width: 1.25rem;
+                  height: 1.25rem;
+                }
+
+                .icon-tick {
+                  display: none;
+                  position: absolute;
+                  right: 0;
+                  top: 0.65rem;
+                  width: 1.125rem;
+                  height: 1.125rem;
+                  background-color: $cta;
+                }
+
+                &.header-language-list-active-item,
+                &:hover {
+                  a {
+                    color: $cta;
+                  }
+
+                  .icon-tick {
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+        }
 
         @media (max-width: $content-box-body-width) {
           display: none;
@@ -373,6 +689,7 @@ $content-box-body-width: 73.125rem;
     position: absolute;
     z-index: 30;
     top: 4rem;
+    width: 100%;
 
     > div {
       width: 100%;
@@ -383,6 +700,53 @@ $content-box-body-width: 73.125rem;
 
     .header-catalog-list-mobile-auth-box {
       padding: 0;
+      position: relative;
+
+      .tooltip {
+        display: none;
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        width: 100%;
+        opacity: 1;
+        cursor: default;
+        padding: 0;
+
+        .icon-close {
+          position: absolute;
+          top: 0.8rem;
+          right: 1.5rem;
+        }
+
+        &.show {
+          display: block;
+        }
+
+        .arrow {
+          left: 50%;
+
+          &::before {
+            border-bottom-color: #fff;
+          }
+        }
+
+        .tooltip-inner {
+          width: 100%;
+          max-width: none;
+          box-shadow: 0 16px 80px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.05);
+          background: #fff;
+          padding: 1.5rem;
+          color: $black;
+          padding-top: 3.5rem;
+
+          .header-login-pass-forg-link {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 0.8125rem;
+            line-height: 120%;
+          }
+        }
+      }
 
       > div {
         height: 7rem;
@@ -414,20 +778,11 @@ $content-box-body-width: 73.125rem;
           margin-top: 3rem;
           color: #fff;
         }
-
-        &:hover {
-          .header-login-text {
-            color: $cta;
-          }
-
-          .icon {
-            background: $cta;
-          }
-        }
       }
 
       .header-catalog-list-mobile-auth-box-register {
         text-align: center;
+
         button {
           background: #FFFFFF;
           color: #017CCC;
@@ -490,7 +845,6 @@ $content-box-body-width: 73.125rem;
         }
 
         .header-catalog-sublist-mobile-body {
-          //display: none;
           background: #EBEBEF;
           padding-left: 2rem;
           padding-right: 2rem;
@@ -531,7 +885,7 @@ $content-box-body-width: 73.125rem;
               margin-bottom: 1rem;
             }
 
-            .header-catalog-sublist-mobile-body {
+            .header-catalog-sublist-mobile-body-box {
               padding: 0;
               margin: 0;
               list-style: none;
@@ -596,10 +950,19 @@ $content-box-body-width: 73.125rem;
     margin-top: 4rem;
     margin-bottom: 2.9375rem;
 
+    @media(max-width: $content-box-body-width) {
+      width: 100%;
+      padding: 0 2rem;
+    }
+
     .footer-col {
       width: 25%;
       float: left;
       margin-bottom: 2rem;
+
+      @media(max-width: $content-box-body-width) {
+        width: 100%;
+      }
 
       .footer-col-title {
         margin-bottom: 1.4375rem;

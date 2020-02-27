@@ -78,10 +78,10 @@
                     </div>
                 </div>
                 <ul class="company-nav">
-                    <li class="active">
+                    <li>
                         <a href="company-info.php" class="tab-item">Beschreibung</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="company-products.php" class="tab-item">PRODUKTE</a>
                     </li>
                     <li>
@@ -91,59 +91,61 @@
             </div>
         </section>
         
-        <section class="company-info">
+        <section class="company-product py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4">
-                        <ul class="sidebar-info">
-                            <li>
-                                <i class="icon icon-fill-dark icon-s icon-worldwide"></i>
-                                <b>Adresse</b>
-                                Adresse <br>St.-Martin-Strasse 53 <br>81669 <br>München <br>Deutschland
-                            </li>
-                            <li>
-                                <i class="icon icon-fill-dark icon-s icon-born"></i>
-                                <b>Gründung</b>
-                                1989
-                            </li>
-                            <li>
-                                <i class="icon icon-fill-dark icon-s icon-employed"></i>
-                                <b>Mitarbeiter</b>
-                                20080
-                            </li>
-                            <li>
-                                <i class="icon icon-fill-dark icon-s icon-managment"></i>
-                                <b>Management</b>
-                                Gerhard Pegam <br>Joachim Zichlarz <br>Dr. Werner Faber
-                            </li>
-                        </ul>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="col-xl-8">
-                        <p class="subtitle-m"><b>Über das Unternehmen.</b></p>
-                        <p>Seit 1969 ist das Familienunternehmen als Electronic Distributor Vertragspartner von Premium-Herstellern elektromechanischer Bauteile. Der Handel mit Steckverbindungen, Relais, Schaltern, Kabeln, Werkzeugen, Kunststoffartikeln und elektrischen Bauelementen findet weltweit statt. Die eigene Kabelkonfektion ist die Ergänzung zum Handel und bietet kundenspezifische, qualitativ hochwertige Lösungen.</p>
-                        <div class="row d-none d-xl-flex">
-                            <div class="col-xl-6">
-                                <a data-fancybox href="https://www.youtube.com/watch?v=YJPgoOCOBFg" class="video-box">
-                                    <img src="img/video.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="col-xl-6">
-                                <a data-fancybox href="https://www.youtube.com/watch?v=YJPgoOCOBFg" class="video-box">
-                                    <img src="img/video.jpg" alt="">
-                                </a>
+                    <div class="col-xl-8 offset-xl-2">
+                        <p>
+                            <a href="company-products.php" class="btn btn-icon btn-link">
+                                <i class="icon icon-arrow-L icon-fill-dark"></i>Zurück zu allen PRODUKTEN
+                            </a>
+                        </p>
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="h4 mb-4">Tunnelwärmer (LinaTherm) von Krones AG</p>
+                                <img class="mb-4" src="img/product.jpg" alt="">
+                                <ul class="dots-list">
+                                    <li>Kompakter, einteiliger Wärmer, der die Behälter nach dem Abfüllen an den Taupunkt angleicht</li>
+                                    <li>Clean-Design-Bauweise in Edelstahl AISI 304Pumpen in Edelstahl-Ausführung</li>
+                                    <li>Langlebiges Kunststoff-Transportband Marathon Belt</li>
+                                    <li>Integriertes Wärmetauscher-System CHESS</li>
+                                    <li>Ein- und Auslauf auf je 1,2 Metern Höhe</li>
+                                </ul>
+                                <div class="download-box gray-bg">
+                                    <p>
+                                        <a class="text-primary" href="#">
+                                            <i class="icon icon-fill-orange icon-s icon-download"></i> Herunterladen
+                                        </a>
+                                    </p>
+                                    <p class="dark-blue">
+                                      <i class="icon icon-fill-dark-blue icon-s icon-document"></i> Tunnelwärmer (LinaTherm) von Krones AG
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="download-box d-none d-xl-block">
-                            <p>
-                                <a class="text-primary" href="#">
-                                    <i class="icon icon-fill-orange icon-s icon-download"></i> Herunterladen
-                                </a>
-                            </p>
-                            <p class="dark-blue">
-                              <i class="icon icon-fill-dark-blue icon-s icon-document"></i> Tunnelwärmer (LinaTherm) von Krones AG
-                            </p>
+                        <p class="h4 my-5">Mehr produkte:</p>
+                        <?php for($i = 0; $i < 3; $i++) { ?>
+                        <div class="card card-product-preview card-hover mb-2">
+                            <div class="row no-gutters">
+                                <div class="col card-product-preview-col-image" style="background-image: url('/img/products/image 2-1.jpg');"></div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <p class="card-product-preview-title">Temperatursensoren</p>
+                                        <div class="card-product-preview-title-text">Facilisis arcu, congue massa quisque. Aliquam
+                                            adipiscing vitae morbi feugiat
+                                            senectus arcu. Accumsan, praesent sed neque dolor ut duis egestas. Tempor leo viverra sem
+                                            in.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card-body">
+                                        <a href="#" class="btn btn-icon btn-icon-right btn-outline-ghost btn-sm card-company-list-details-btn">DETAILS<i class="icon icon-arrow-follow icon-fill-dark"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
@@ -151,6 +153,13 @@
 
         <?php include 'footer.php'; ?>
 
+        <script>
+            $('.js-filters-toggle').on('click', function(){
+                $(this).find('.icon').toggleClass('icon-dropdown-open');
+                $(this).find('.icon').toggleClass('icon-dropdown-close');
+                $(this).closest('.sidebar-filters').find('form').toggle();
+            });
+        </script>
   </body>
 
 </html>
