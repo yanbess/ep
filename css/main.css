@@ -9739,6 +9739,7 @@ h6, .h6 {
 img {
   max-width: 100%; }
 
+/* Company page */
 .breadcrumb-wrapper {
   position: relative;
   background-repeat: no-repeat;
@@ -9925,12 +9926,22 @@ img {
         .company-header .company-nav li a {
           width: 100%; } }
 
+/* Company news */
 .company-news {
   margin-left: -.375rem;
   margin-right: -.375rem; }
   .company-news > div {
     padding: 0 .375rem .75rem; }
 
+.modal .close {
+  position: absolute;
+  top: 12px;
+  left: auto;
+  right: 15px;
+  z-index: 2;
+  opacity: 1; }
+
+/* Company info */
 .company-info {
   padding: 3rem 0 7.5rem;
   background: #fff; }
@@ -10034,6 +10045,7 @@ img {
   .dots-list li:not(:last-child) {
     margin: 0 0 .5rem; }
 
+/* Companies list */
 .companies-header {
   background: #fff;
   padding: 2.5rem 0 3rem; }
@@ -10111,6 +10123,9 @@ img {
 
 .gray {
   color: #7B7B92; }
+
+.light-gray {
+  color: #B0B0BE; }
 
 .btn.btn-orange-o {
   background: transparent;

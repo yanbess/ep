@@ -80,7 +80,7 @@
                                             <i class="icon icon-fill-gray-500 icon-s icon-time"></i>
                                             10.11.2018 23:00
                                         </p>
-                                        <a href="#" class="card-news-preview-title body-heading-s">Verbesserung der Lieferstruktur deutscher Produkte an EPCOS AG.</a>
+                                        <a href="#" class="card-news-preview-title body-heading-s" data-target="#newsCard" data-toggle="modal">Verbesserung der Lieferstruktur deutscher Produkte an EPCOS AG.</a>
                                     </div>
                                 </div>
                             </div>
