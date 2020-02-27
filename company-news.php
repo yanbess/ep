@@ -11,15 +11,15 @@
   <?php include 'header.php'; ?>
 
   <div class="breadcrumb-wrapper" style="background-image:url(img/breadcrumb-wrapper.jpg);">
-    <div class="container d-none d-md-block">
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Exportpages</a></li>
-          <li class="breadcrumb-item"><a href="#">Elektrotechnik</a></li>
-          <li class="breadcrumb-item active" aria-current="page">EPCOS AG</li>
-        </ol>
-      </nav>
-    </div>
+      <div class="container d-none d-md-block">
+          <nav>
+              <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.php">Exportpages</a></li>
+                  <li class="breadcrumb-item"><a href="companies-list.php">Elektrotechnik</a></li>
+                  <li class="breadcrumb-item active">EPCOS AG</li>
+              </ol>
+          </nav>
+      </div>
   </div>
 
   <section class="company-header">
@@ -104,8 +104,7 @@
                                     <i class="icon icon-fill-gray-500 icon-s icon-time"></i>
                                     10.11.2018 23:00
                                 </p>
-                                <a href="#" class="card-news-preview-title body-heading-s">Verbesserung der Lieferstruktur
-                                    deutscher Produkte an EPCOS AG.</a>
+                                <a href="#" class="card-news-preview-title body-heading-s" data-target="#newsCard" data-toggle="modal">Verbesserung der Lieferstruktur deutscher Produkte an EPCOS AG.</a>
                             </div>
                         </div>
                     </div>

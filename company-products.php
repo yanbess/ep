@@ -11,15 +11,15 @@
     <?php include 'header.php'; ?>
     
         <div class="breadcrumb-wrapper" style="background-image:url(img/breadcrumb-wrapper.jpg);">
-          <div class="container d-none d-md-block">
-            <nav>
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Exportpages</a></li>
-                <li class="breadcrumb-item"><a href="#">Elektrotechnik</a></li>
-                <li class="breadcrumb-item active" aria-current="page">EPCOS AG</li>
-              </ol>
-            </nav>
-          </div>
+            <div class="container d-none d-md-block">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.php">Exportpages</a></li>
+                        <li class="breadcrumb-item"><a href="companies-list.php">Elektrotechnik</a></li>
+                        <li class="breadcrumb-item active">EPCOS AG</li>
+                    </ol>
+                </nav>
+            </div>
         </div>
 
         <section class="company-header">

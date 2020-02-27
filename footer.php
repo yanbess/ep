@@ -41,6 +41,24 @@
     </div>
 </footer>
 
+<div class="modal fade" id="newsCard" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body pb-0">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <p class="d-flex align-items-center light-gray">
+                    <i class="icon icon-fill-gray-500 icon-s icon-time mr-3"></i>
+                    10.11.2018 23:00
+                </p>
+                <p class="h5">"Verbesserte Lieferstruktur der DEUTSCH Produkte bei Börsig" von Börsig GmbH Electronic-Distributor</p>
+                <img class="mb-3" src="img/news.png" alt="">
+                <p>Seit 2017 ist Börsig offizieller Distributor für DEUTSCH Produkte des Herstellers TE Connectivity. Die Nachfrage am Markt ist kontinuierlich gestiegen, ein Grund für Börsig sich die komplette Produktserie auf Lager zu legen sowie die Preisstruktur zu verbessern.</p>
+                <p>Der Electronic-Distributor Börsig aus Neckarsulm hat vom weltgrößten Hersteller von Anschlusslösungen – TE Connectivity – bereits 2017 das offizielle Distributionsrecht für die DEUTSCH Produkte erhalten. Bei den DEUTSCH Serien handelt es sich um Produkte, welche für Anwendungen im Bereich der industriellen und gewerblichen Transporte</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
