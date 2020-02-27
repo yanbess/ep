@@ -190,5 +190,20 @@
                 $('#back_top').fadeOut('slow').stop();
             });
         });
+      
+      // fixed menu
+      
+      $(document).ready(function(){
+          let headerHeight =  $('header').height() + 30;
+          $(window).scroll(function () {
+              if ($(this).scrollTop() > headerHeight) {
+                  $('header').addClass('fixed');
+                  $('.header-placeholder').addClass('show');
+              } else {
+                  $('header').removeClass('fixed');
+                  $('.header-placeholder').removeClass('show');
+              };
+          });
+      });
     });
 </script>

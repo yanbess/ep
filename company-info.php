@@ -91,6 +91,45 @@
             </div>
         </section>
         
+        <div class="company-header fixed">
+            <div class="container d-flex align-items-center">
+                <div class="company-logo">
+                    <img src="img/company-logo.png" alt="">
+                </div>
+                <p class="h4 m-0">
+                    <i class="icon icon-flag-size icon-DE mr-3"></i>EPCOS AG
+                </p>
+                <div class="fixed-info">
+                    <ul class="d-flex">
+                        <li class="d-none d-xl-block">
+                            <i class="icon icon-fill-dark icon-s icon-manufacturers"></i> Hersteller
+                        </li>
+                        <li class="d-none d-xl-block">
+                            <i class="icon icon-fill-dark icon-s icon-worldwide"></i> Deutschland 
+                        </li>
+                        <li>
+                            <i class="icon icon-fill-dark-blue icon-s icon-link"></i> <a href="#">Website</a>
+                        </li>
+                    </ul>
+                    <ul class="sertificates-list">
+                        <li>ISO 9001</li>
+                        <li>ISO 14001</li>
+                        <li>VDA 6.1</li>
+                        <li>ISO TS 16949</li>
+                        <li>ISO 10409</li>
+                    </ul>
+                </div>
+                <div class="btns-group">
+                    <a class="btn btn-icon btn-icon-right btn-outline-ghost" href="mailto:test@test.com">
+                        ANFRAGE <i class="icon icon-fill-blue icon-s icon-email"></i>
+                    </a>
+                    <a class="btn btn-outline-ghost" href="tel:123">
+                        <i class="icon icon-fill-blue icon-s icon-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
         <section class="company-info">
             <div class="container">
                 <div class="row">
@@ -153,8 +192,15 @@
 
         <script>
             $(document).ready(function(){
-                $('.company-header + *').offset().top;
-            })
+                let headerTop = $('.company-nav').offset().top - 60;
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > headerTop) {
+                        $('.company-header.fixed').addClass('show');
+                    } else {
+                        $('.company-header.fixed').removeClass('show');
+                    };
+                });
+            });
         </script>
   </body>
 

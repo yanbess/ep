@@ -1,3 +1,4 @@
+<div class="header-placeholder"></div>
 <header class="header">
     <div class="header-body-outer">
         <div class="header-body">

@@ -82,6 +82,7 @@ $content-box-body-width: 73.125rem;
 .header {
   @extend .content-box;
   position: relative;
+  vertical-align: top;
 
   .header-catalog-list {
     @extend .content-box;
