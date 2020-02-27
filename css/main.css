@@ -9625,8 +9625,7 @@ h6, .h6 {
 .card.card-news-preview .card-news-preview-col-image {
   width: 7.5rem;
   height: 7.5rem;
-  margin: 1rem;
-  margin-right: 0;
+  margin: 1rem 0 .85rem 1rem;
   border-radius: 0.5rem;
   flex: 0 0 7.5rem;
   max-width: 7.5rem;
@@ -10121,6 +10120,77 @@ img {
     color: #fff;
     background-color: #FA6705;
     border-color: #FA6705; }
+
+/* Homepage */
+.welcom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 46.75rem;
+  background: url(../img/welcom-bg.png) no-repeat center top;
+  background-size: cover;
+  font-size: 1.75rem;
+  line-height: 1.15;
+  color: #fff; }
+  @media (max-width: 73.125rem) {
+    .welcom {
+      min-height: 25rem;
+      padding: 6rem 4rem 2rem;
+      font-size: 1.25rem;
+      line-height: 1.2; }
+      .welcom img {
+        height: 3.5rem; }
+      .welcom form {
+        margin: 6rem 0 0; }
+        .welcom form input {
+          border-radius: 2.3125rem 0 0 2.3125rem;
+          border: 0;
+          height: 3rem;
+          padding: 0 1.5rem; }
+        .welcom form button {
+          height: 3rem; } }
+  .welcom:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2); }
+  .welcom > * {
+    position: relative;
+    z-index: 2; }
+
+.homepage {
+  padding: 0 1rem 7.5rem; }
+  @media (max-width: 73.125rem) {
+    .homepage {
+      padding: 1rem 1rem 0; } }
+  .homepage .col-xl-4 > .card {
+    position: relative;
+    z-index: 2;
+    margin: -5rem 0 0;
+    border: 0; }
+    @media (max-width: 73.125rem) {
+      .homepage .col-xl-4 > .card {
+        margin: 0 0 1rem; } }
+  .homepage .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: bold;
+    color: #fff; }
+  .homepage .card-body {
+    padding: 1rem 1rem .5rem; }
+
+.flex-nowrap {
+  flex-wrap: nowrap; }
 
 .logo-text-s {
   width: 8.5rem;
