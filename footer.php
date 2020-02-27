@@ -74,6 +74,100 @@
         $('[data-toggle="tooltip"]').tooltip();
         $('[data-toggle="tooltip-white"]').tooltip({
             template: '<div class="tooltip tooltip-white" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
-        })
-    })
+        });
+
+        $('.header-catalog-mobile').click(function () {
+            $(this).hide();
+            $('.header-catalog-list-mobile').show();
+            $('.header-catalog-mobile-close').show();
+        });
+
+        $('.header-catalog-mobile-close').click(function () {
+            $(this).hide();
+            $('.header-catalog-list-mobile').hide();
+            $('.header-catalog-mobile').show();
+        });
+
+        $('.header-catalog-list-mobile-item').click(function () {
+
+            if ($(this).hasClass('header-catalog-list-mobile-item-active')) {
+                $('.header-catalog-list-mobile-item-active').removeClass('header-catalog-list-mobile-item-active');
+                $('.header-catalog-sublist-mobile-body').hide();
+            } else {
+                $('.header-catalog-list-mobile-item-active').removeClass('header-catalog-list-mobile-item-active');
+                $(this).addClass('header-catalog-list-mobile-item-active');
+                $('.header-catalog-sublist-mobile-body').hide();
+                $(this).children('.header-catalog-sublist-mobile-body').show();
+            }
+        });
+
+        $('.header-search-mobile').click(function () {
+            $('.header-search-box-mobile').show();
+        });
+
+        $('.header-search-box-mobile-close').click(function () {
+            $('.header-search-box-mobile').hide();
+        });
+
+        $('.header-catalog-button').click(function () {
+            if ($(this).hasClass('header-catalog-button-active')) {
+                $('.header-catalog-list, .header-catalog-sublist').hide();
+                $(this).removeClass('header-catalog-button-active');
+            } else {
+                $('.header-catalog-list').show();
+                $(this).addClass('header-catalog-button-active');
+            }
+        });
+
+        $('.header-catalog-list-item').hover(function () {
+            $('.header-catalog-sublist').hide();
+            $('#header-catalog-sublist-' + $(this).data('submenu')).show();
+        });
+
+        $('.header-catalog-sublist-box-close').click(function () {
+            $('.header-catalog-sublist').hide();
+        });
+
+        $('.header-login').click(function () {
+            $('.header-login-tooltip').addClass('show');
+        });
+
+        $('.header-language').click(function () {
+            $('.header-language-tooltip').addClass('show');
+        });
+
+        $('.header-language-mobile-flag').click(function () {
+            $('.header-language-tooltip-mobile').addClass('show');
+            $('.header-language-mobile-flag').hide();
+            $('.header-language-mobile-close').show();
+        });
+
+        $('.header-language-mobile-close').click(function () {
+            $('.header-language-tooltip-mobile').removeClass('show');
+            $('.header-language-mobile-flag').show();
+            $('.header-language-mobile-close').hide();
+        });
+
+        $('.header-catalog-list-mobile-auth-box-login').click(function () {
+            $('.header-login-tooltip-mobile').addClass('show');
+        });
+
+        $('.icon-close').click(function () {
+            $('.header-login-tooltip-mobile').removeClass('show');
+        });
+
+
+        $(document).mouseup(function (e) {
+            var headerLoginTooltip = $(".header-login-tooltip");
+            var headerLanguageTooltip = $(".header-language-tooltip");
+
+            if (!headerLoginTooltip.is(e.target) && headerLoginTooltip.has(e.target).length === 0) {
+                $('.header-login-tooltip').removeClass('show');
+            }
+
+            if (!headerLanguageTooltip.is(e.target) && headerLanguageTooltip.has(e.target).length === 0) {
+                $('.header-language-tooltip').removeClass('show');
+            }
+        });
+    });
 </script>
