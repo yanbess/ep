@@ -49,6 +49,38 @@
             </div>
         </section>
         
+        <div class="companies-header fixed">
+            <div class="container d-flex align-items-center">
+                <p class="h4 m-0">Elektrotechnik</p>
+                <div class="categories-statistic">
+                    <div>
+                        <i class="icon icon-fill-dark icon-exporters"></i>
+                        <div class="count">
+                            Exporteure <b>1 921</b>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="icon icon-fill-dark icon-manufacturers"></i>
+                        <div class="count">
+                            Hersteller <b>1 803</b>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="icon icon-fill-dark icon-distributors"></i>
+                        <div class="count">
+                            Händler <b>102</b>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="icon icon-fill-dark icon-providers"></i>
+                        <div class="count">
+                            Dienstleister <b>16</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <section class="companies-list py-3 py-xl-5">
             <div class="container">
                 <div class="row">
@@ -207,6 +239,18 @@
 
         <?php include 'footer.php'; ?>
 
+        <script>
+            $(document).ready(function(){
+                let headerTop = $('.companies-list').offset().top;
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > headerTop) {
+                        $('.companies-header.fixed').addClass('show');
+                    } else {
+                        $('.companies-header.fixed').removeClass('show');
+                    };
+                });
+            });
+        </script>
   </body>
 
 </html>
