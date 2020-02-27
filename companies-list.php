@@ -137,7 +137,32 @@
                                             <span class="float-left mt-1">Deutschland</span>
                                         </div>
                                         <div class="card-company-list-info-right">
-                                            <a href="#" class="mr-4 body-xs card-company-list-further-products">weitere Produkte (8)</a>
+                                            
+                                            <div class="mr-4 body-xs card-company-list-further-products">
+                                                <span>weitere Produkte (8)</span>
+                                                <div class="tooltipe-box">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="company-product.php">Ethernet-Switches</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="company-product.php">Ethernetsteckverbinder</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="company-product.php">Installationskabel</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="company-product.php">Netzwerkkomponenten</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="company-product.php">Lichtwellenleiter-Patchkabel</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="company-product.php">Eingang-Ausgang-Module</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                             <a href="#" class="btn btn-icon btn-icon-right btn-outline-ghost btn-sm card-company-list-details-btn">DETAILS<i class="icon icon-arrow-follow icon-fill-dark"></i></a>
                                         </div>
                                         <div class="card-company-list-text body-s">Das Familienunternehmen BENEDICT aus Österreich
