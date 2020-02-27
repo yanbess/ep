@@ -32,19 +32,25 @@ $content-box-body-width: 73.125rem;
 }
 
 .tab-item {
-  width: 9rem;
   height: 4rem;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
-  padding-top: 1.7rem;
+  padding: 1.5rem 2rem;
   background: #fff;
+  color: #7B7B92;
   text-align: center;
   font-family: "Prompt", sans-serif;
+
+  @media(max-width: $content-box-body-width) {
+    padding: 1rem;
+  }
 
   &:hover {
     color: $primary;
@@ -84,7 +90,7 @@ $content-box-body-width: 73.125rem;
     width: 100%;
     top: 4.5rem;
     box-shadow: 0 25px 24px rgba(0, 0, 0, 0.05);
-    z-index: 10;
+    z-index: 30;
 
     .header-catalog-list-body {
       @extend .content-box-body;
@@ -116,7 +122,8 @@ $content-box-body-width: 73.125rem;
     display: none;
     position: absolute;
     top: 4.5rem + 6rem;
-    z-index: 2;
+    z-index: 20;
+    background: transparent;
 
     .header-catalog-sublist-box {
       @extend .content-box-body;
@@ -140,6 +147,7 @@ $content-box-body-width: 73.125rem;
         .header-catalog-sublist-list-box {
           width: 15rem;
           margin-bottom: 2rem;
+          margin-right: 2rem;
 
           .header-catalog-sublist-title {
             @extend .body-heading-s;
@@ -172,7 +180,7 @@ $content-box-body-width: 73.125rem;
   .header-body-outer {
     position: relative;
     box-shadow: 0px -4px 32px rgba(0, 0, 0, 0.1);
-    z-index: 20;
+    z-index: 40;
 
     .header-body {
       @extend .content-box-body;
@@ -358,10 +366,230 @@ $content-box-body-width: 73.125rem;
     }
   }
 
+  .header-catalog-list-mobile {
+    background: #fff;
+    $padding-lr: 2rem;
+    display: none;
+    position: absolute;
+    z-index: 30;
+    top: 4rem;
+
+    > div {
+      width: 100%;
+      float: left;
+      padding-left: $padding-lr;
+      padding-right: $padding-lr;
+    }
+
+    .header-catalog-list-mobile-auth-box {
+      padding: 0;
+
+      > div {
+        height: 7rem;
+        background: #017CCC;
+        width: 50%;
+        padding-left: $padding-lr;
+        padding-right: $padding-lr;
+        float: left;
+      }
+
+      .header-catalog-list-mobile-auth-box-login {
+        text-align: center;
+
+        .icon {
+          margin-right: 0.75rem;
+          display: inline-block;
+          background-color: #fff;
+          margin-top: 2.75rem;
+        }
+
+        .header-catalog-list-mobile-auth-box-login-text {
+          display: inline-block;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          margin-top: 3rem;
+          color: #fff;
+        }
+
+        &:hover {
+          .header-login-text {
+            color: $cta;
+          }
+
+          .icon {
+            background: $cta;
+          }
+        }
+      }
+
+      .header-catalog-list-mobile-auth-box-register {
+        text-align: center;
+        button {
+          background: #FFFFFF;
+          color: #017CCC;
+          margin-top: 2rem;
+          display: inline-block;
+        }
+      }
+    }
+
+    .header-catalog-list-mobile-title {
+      @extend .h4;
+      padding-top: 3rem;
+      height: 6.125rem;
+    }
+
+    .header-catalog-list-mobile-body {
+      margin: 0;
+      list-style: none;
+      padding: 0;
+      float: left;
+      width: 100%;
+      margin-bottom: 3rem;
+
+
+      .header-catalog-list-mobile-item {
+
+        .header-catalog-list-mobile-item-box {
+          @extend .body-heading-m;
+          margin: 0;
+          padding: 0;
+          padding-top: 0.875rem;
+          padding-bottom: 0.875rem;
+          padding-left: 2.25rem + $padding-lr;
+          list-style: none;
+          height: 3rem;
+          position: relative;
+
+          .header-catalog-list-mobile-item-icon {
+            width: 1.75rem;
+            height: 1.75rem;
+            position: absolute;
+            left: $padding-lr;
+            top: 0.625rem;
+            background-color: #F0F0F0;
+          }
+
+          .header-catalog-list-mobile-item-arrow, .header-catalog-list-mobile-item-arrow-active {
+            position: absolute;
+            right: $padding-lr;
+            top: 0.9375rem;
+            background-color: #31313B;
+            width: 1.125rem;
+            height: 1.125rem;
+          }
+
+          .header-catalog-list-mobile-item-arrow-active {
+            display: none;
+            background-color: #fff;
+          }
+        }
+
+        .header-catalog-sublist-mobile-body {
+          //display: none;
+          background: #EBEBEF;
+          padding-left: 2rem;
+          padding-right: 2rem;
+
+          .header-catalog-sublist-mobile-all-list {
+            $font-size: 0.875rem;
+            $line-height: 1rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 2.125rem 0;
+            margin-bottom: 0.125rem;
+            position: relative;
+            display: block;
+            width: 100%;
+            font-style: normal;
+            font-weight: 600;
+            font-size: $font-size;
+            line-height: $line-height;
+            text-decoration: none;
+
+            .icon {
+              background-color: #1B6595;
+              width: 1.125rem;
+              height: 1.125rem;
+              position: absolute;
+              top: 2rem + (($line-height - $font-size) / 2);
+              right: 0;
+            }
+          }
+
+          .header-catalog-sublist-mobile-box {
+            display: inline-block;
+            width: 100%;
+
+            .header-catalog-sublist-mobile-title {
+              @extend .body-heading-m;
+              font-weight: bold;
+              margin-bottom: 1rem;
+            }
+
+            .header-catalog-sublist-mobile-body {
+              padding: 0;
+              margin: 0;
+              list-style: none;
+              margin-bottom: 2rem;
+
+              .header-catalog-sublist-mobile-item {
+                margin-bottom: 0.7rem;
+
+                a {
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 1.0625rem;
+                  line-height: 150%;
+                  letter-spacing: -0.02em;
+                  text-decoration: none;
+                  display: block;
+                  width: 100%;
+                  position: relative;
+
+                  .icon {
+                    background-color: #1B6595;
+                    position: absolute;
+                    width: 1.125rem;
+                    height: 1.125rem;
+                    right: 0;
+                    top: 0.25rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &.header-catalog-list-mobile-item-active {
+          .header-catalog-list-mobile-item-box {
+            background: #31313B;
+            color: #FFFFFF;
+
+            .header-catalog-list-mobile-item-arrow {
+              display: none;
+            }
+
+            .header-catalog-list-mobile-item-arrow-active {
+              display: block;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+
 }
 
 .footer {
   @extend .content-box;
+  border-top: 1px solid #F1F1F4;
 
   .footer-body {
     @extend .content-box-body;

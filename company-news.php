@@ -11,7 +11,7 @@
   <?php include 'header.php'; ?>
 
   <div class="breadcrumb-wrapper" style="background-image:url(img/breadcrumb-wrapper.jpg);">
-    <div class="container">
+    <div class="container d-none d-md-block">
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Exportpages</a></li>
@@ -24,21 +24,30 @@
 
   <section class="company-header">
       <div class="container">
-          <div class="row mb-5">
-              <div class="col-md-2">
+          <div class="row mb-4 mb-md-5">
+              <div class="d-flex col-xl-2 order-0">
                   <div class="company-logo">
                       <img src="img/company-logo.png" alt="">
                   </div>
+                  <div class="d-block d-xl-none">
+                    <p class="h4 text-white mt-2 mb-4">
+                        <i class="icon icon-flag-size icon-DE mr-3"></i>EPCOS AG
+                    </p>
+                    <ul class="d-flex">
+                        <li>Hersteller</li>
+                        <li>Deutschland</li>
+                    </ul>
+                  </div>
               </div>
-              <div class="col-md-6 company-info">
-                  <p class="h3 text-white">
+              <div class="col-xl-6 order-xl-0 order-1">
+                  <p class="h3 text-white d-none d-xl-block">
                       <i class="icon icon-flag-size icon-DE mr-3"></i>EPCOS AG
                   </p>
                   <ul class="d-flex">
-                      <li>
+                      <li class="d-none d-xl-block">
                           <i class="icon icon-fill-dark icon-s icon-manufacturers"></i> Hersteller
                       </li>
-                      <li>
+                      <li class="d-none d-xl-block">
                           <i class="icon icon-fill-dark icon-s icon-worldwide"></i> Deutschland 
                       </li>
                       <li>
@@ -46,7 +55,7 @@
                       </li>
                   </ul>
                   <ul class="sertificates-list">
-                      <li>
+                      <li class="star">
                           <i class="icon icon-fill-dark icon-premium"></i>
                       </li>
                       <li>ISO 9001</li>
@@ -59,7 +68,7 @@
                       </li>
                   </ul>
               </div>
-              <div class="col-md-4 d-flex align-items-end justify-content-end">
+              <div class="col-xl-4 order-0 btns-group">
                   <a class="btn btn-cta" href="mailto:test@test.com">
                       ANFRAGE <i class="icon icon-fill-white icon-s icon-email"></i>
                   </a>
@@ -70,13 +79,13 @@
           </div>
           <ul class="company-nav">
               <li>
-                  <a href="#" class="tab-item">PRODUKTE</a>
+                  <a href="company-info.php" class="tab-item">Beschreibung</a>
               </li>
               <li>
-                  <a href="#" class="tab-item">Beschreibung</a>
+                  <a href="#" class="tab-item">PRODUKTE</a>
               </li>
               <li class="active">
-                <a href="#" class="tab-item">News</a>
+                <a href="company-news.php" class="tab-item">News</a>
               </li>
           </ul>
       </div>
@@ -85,7 +94,7 @@
   <section class="container py-5">
       <div class="row company-news">
           <?php for($i = 0; $i < 6; $i++) { ?>
-            <div class="col-md-4">
+            <div class="col-xl-4">
                 <div class="card card-news-preview card-hover">
                     <div class="row no-gutters">
                         <div class="col card-news-preview-col-image" style="background: #ccc;"></div>
@@ -113,6 +122,21 @@
             </div>
           <?php } ?>
       </div>
+      
+      <div class="pagination-custom mt-4">
+            <div class="pagination-custom-page pagination-custom-page-arrow pagination-custom-page-arrow-l">&nbsp;
+                <i class="icon icon-fill-dark icon-s icon-arrow-L"></i>
+            </div>
+            <a href="#" class="pagination-custom-page">1</a>
+            <a href="#" class="pagination-custom-page">2</a>
+            <a href="#" class="pagination-custom-page">3</a>
+            <a href="#" class="pagination-custom-page">4</a>
+            <div class="pagination-custom-page">...</div>
+            <a href="#" class="pagination-custom-page">10</a>
+            <a href="#" class="pagination-custom-page pagination-custom-page-arrow pagination-custom-page-arrow-r">&nbsp;
+                <i class="icon icon-fill-dark icon-s icon-arrow-R"></i>
+            </a>
+        </div>
   </section>
 
   <?php include 'footer.php'; ?>

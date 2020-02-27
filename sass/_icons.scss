@@ -48,8 +48,12 @@
   background-color: #017CCC;
 }
 
-.icon-fill-dark-blue{
+.icon-fill-dark-blue {
   background-color: #1B6595;
+}
+
+.icon-fill-orange {
+  background-color: #FA6705;
 }
 
 .icon-fill-gray-500 {
@@ -79,6 +83,11 @@
 .icon-arrow-up {
   -webkit-mask-image: url("../img/icons/arrow-up.svg");
   mask-image: url("../img/icons/arrow-up.svg");
+}
+
+.icon-arrow-down {
+  -webkit-mask-image: url("../img/icons/arrow-down.svg");
+  mask-image: url("../img/icons/arrow-down.svg");
 }
 
 .icon-arrow-follow {

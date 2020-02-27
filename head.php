@@ -13,4 +13,5 @@
       rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap&subset=latin-ext"
       rel="stylesheet">
+<link rel="stylesheet" href="/css/jquery.fancybox.css">
 <link rel="stylesheet" href="/css/main.css">
