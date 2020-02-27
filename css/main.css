@@ -10467,22 +10467,31 @@ img {
         .header .header-body-outer .header-body {
           width: 100%;
           height: 4rem; } }
-      .header .header-body-outer .header-body .header-mobile-right-button {
-        display: none; }
-        @media (max-width: 73.125rem) {
-          .header .header-body-outer .header-body .header-mobile-right-button {
-            display: block;
-            width: 4rem;
-            height: 4rem;
-            float: right;
-            text-align: center;
-            padding-top: 1.25rem;
-            cursor: pointer; } }
-        .header .header-body-outer .header-body .header-mobile-right-button .icon {
-          width: 1.5rem;
-          height: 1.5rem; }
-      .header .header-body-outer .header-body .header-language-mobile .header-language-mobile-close {
-        display: inline-block; }
+      .header .header-body-outer .header-body .header-mobile-right-buttons {
+        left: 11.5rem;
+        position: absolute;
+        right: 0; }
+        .header .header-body-outer .header-body .header-mobile-right-buttons .header-mobile-right-button {
+          display: none; }
+          @media (max-width: 73.125rem) {
+            .header .header-body-outer .header-body .header-mobile-right-buttons .header-mobile-right-button {
+              display: block;
+              width: 4rem;
+              height: 4rem;
+              float: right;
+              text-align: center;
+              padding-top: 1.25rem;
+              cursor: pointer; } }
+          .header .header-body-outer .header-body .header-mobile-right-buttons .header-mobile-right-button .icon {
+            width: 1.5rem;
+            height: 1.5rem; }
+          @media (max-width: 24rem) {
+            .header .header-body-outer .header-body .header-mobile-right-buttons .header-mobile-right-button {
+              width: 33%; } }
+        .header .header-body-outer .header-body .header-mobile-right-buttons .header-language-mobile .header-language-mobile-close {
+          display: inline-block; }
+        .header .header-body-outer .header-body .header-mobile-right-buttons .header-catalog-mobile-close {
+          display: none; }
       .header .header-body-outer .header-body .tooltip .icon-close {
         position: absolute;
         top: 1rem;
@@ -10548,8 +10557,6 @@ img {
                 color: #017CCC; }
               .header .header-body-outer .header-body .tooltip.header-language-tooltip-mobile .tooltip-inner > ul > li.header-language-list-active-item .icon-tick, .header .header-body-outer .header-body .tooltip.header-language-tooltip-mobile .tooltip-inner > ul > li:hover .icon-tick {
                 display: block; }
-      .header .header-body-outer .header-body .header-catalog-mobile-close {
-        display: none; }
       .header .header-body-outer .header-body .header-logo-line {
         display: none; }
         @media (max-width: 73.125rem) {
@@ -10591,7 +10598,7 @@ img {
           border-bottom: 0;
           border-top-left-radius: 1rem;
           border-top-right-radius: 1rem;
-          padding-bottom: 1.49rem; }
+          padding-bottom: 1.41rem; }
           .header .header-body-outer .header-body .header-catalog-button.header-catalog-button-active .icon-menu {
             display: none; }
           .header .header-body-outer .header-body .header-catalog-button.header-catalog-button-active .icon-close {
