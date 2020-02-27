@@ -51,9 +51,9 @@
         <section class="companies-list py-3 py-xl-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-xl-3">
                        <div class="card categories-filters">
-                            <div class="card-body">
+                            <div class="card-body p-3">
                                 <form>
                                     <label class="mb-3">Unternehmensland</label>
                                     <p><em>тут будет выпадающий список</em></p>
@@ -84,7 +84,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-xl-8">
+                    <div class="col-xl-9">
                         <p class="h4"><b>Gezeigte Unternehmen: 240</b></p>
                         <div class="d-flex align-items-center mb-4">
                             <ul class="active-filters">
@@ -125,20 +125,31 @@
                         <?php for($i = 0; $i < 7; $i++) { ?>
                         <div class="card surface card-company-list card-hover mb-2">
                             <div class="row no-gutters">
-                                <div class="col card-company-list-col-image" style="background-image: url('/img/companies/image 5.jpg');"></div>
+                                <div class="card-company-list-img-box">
+                                    <div class="col card-company-list-col-image" style="background-image: url('/img/companies/image 5.jpg');"></div>
+                                    <div class="d-flex align-items-center d-xl-none">
+                                        <i class="icon icon-flag-size icon-DE float-left mr-2"></i>
+                                        <div class="h6 mb-0">EPCOS AG</div>
+                                    </div>
+                                </div>
                                 <div class="col card-company-list-col-body">
                                     <div class="card-body">
-                                        <i class="icon icon-flag-size icon-DE float-left mr-2"></i>
-                                        <div class="h6">EPCOS AG</div>
-                                        <div class="card-company-list-info body-heading-xs">
-                                            <i class="icon icon-fill-gray-500 icon-s icon-manufacturers float-left mr-1"></i>
-                                            <span class="float-left mt-1 mr-3">Hersteller</span>
-                                            <i class="icon icon-fill-gray-500 icon-s icon-worldwide float-left mr-1"></i>
-                                            <span class="float-left mt-1">Deutschland</span>
+                                        <div class="d-none d-xl-block">
+                                            <i class="icon icon-flag-size icon-DE float-left mr-2"></i>
+                                            <div class="h6">EPCOS AG</div>
                                         </div>
-                                        <div class="card-company-list-info-right">
-                                            
-                                            <div class="mr-4 body-xs card-company-list-further-products">
+                                        <div class="card-company-list-info body-heading-xs order-xl-0 order-1">
+                                            <div>
+                                              <i class="icon icon-fill-gray-500 icon-s icon-manufacturers float-left mr-1"></i>
+                                              <span class="float-left mt-1 mr-3">Hersteller</span>
+                                            </div>
+                                            <div>
+                                              <i class="icon icon-fill-gray-500 icon-s icon-worldwide float-left mr-1"></i>
+                                              <span class="float-left mt-1">Deutschland</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-company-list-info-right order-xl-0 order-1">
+                                            <div class="d-none d-xl-block mr-4 body-xs card-company-list-further-products">
                                                 <span>weitere Produkte (8)</span>
                                                 <div class="tooltipe-box">
                                                     <ul>
@@ -165,7 +176,7 @@
                                             </div>
                                             <a href="#" class="btn btn-icon btn-icon-right btn-outline-ghost btn-sm card-company-list-details-btn">DETAILS<i class="icon icon-arrow-follow icon-fill-dark"></i></a>
                                         </div>
-                                        <div class="card-company-list-text body-s">Das Familienunternehmen BENEDICT aus Österreich
+                                        <div class="card-company-list-text body-s order-0">Das Familienunternehmen BENEDICT aus Österreich
                                             erzeugt Niederspannungs-Schaltgeräte die sich durch besondere Merkmale von ihren
                                             Mitbewerbern abheben. Erfahrungen aus jahrzehntelangem Forschen und Ent...
                                         </div>

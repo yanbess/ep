@@ -9575,6 +9575,13 @@ h6, .h6 {
   .card.card-news .card-news-date .icon {
     position: absolute;
     left: 0; }
+@media (max-width: 73.125rem) {
+  .card.card-company-list .row {
+    flex-direction: column; } }
+.card.card-company-list .card-company-list-img-box {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 1rem 0; }
 .card.card-company-list .card-company-list-col-image {
   width: 6.5rem;
   height: 3.25rem;
@@ -9584,22 +9591,48 @@ h6, .h6 {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative; }
+  @media (max-width: 73.125rem) {
+    .card.card-company-list .card-company-list-col-image {
+      flex: initial;
+      height: 2.125rem;
+      width: 4.357rem;
+      background-size: contain;
+      background-position: center center;
+      margin: 0 1rem 0 0; } }
 .card.card-company-list .card-company-list-col-body {
   border-left: 1px solid #EBEBEF; }
   .card.card-company-list .card-company-list-col-body .card-body {
     padding-left: 2rem;
     padding-right: 2rem; }
+    @media (max-width: 73.125rem) {
+      .card.card-company-list .card-company-list-col-body .card-body {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1.5rem 1rem 1rem; } }
     .card.card-company-list .card-company-list-col-body .card-body .icon {
       margin-top: 0.08rem; }
     .card.card-company-list .card-company-list-col-body .card-body .card-company-list-info {
       color: #B0B0BE;
       margin-bottom: 1rem;
-      display: inline-block; }
+      display: inline-flex; }
+      @media (max-width: 73.125rem) {
+        .card.card-company-list .card-company-list-col-body .card-body .card-company-list-info {
+          display: flex;
+          flex-direction: column;
+          margin: 0; }
+          .card.card-company-list .card-company-list-col-body .card-body .card-company-list-info > div:not(:last-child) {
+            margin: 0 0 .5rem; }
+          .card.card-company-list .card-company-list-col-body .card-body .card-company-list-info .icon {
+            margin: 0 .5rem 0 0; } }
     .card.card-company-list .card-company-list-col-body .card-body .card-company-list-info-right {
       display: flex;
       align-items: center;
       float: right;
       margin-top: -1.2rem; }
+      @media (max-width: 73.125rem) {
+        .card.card-company-list .card-company-list-col-body .card-body .card-company-list-info-right {
+          margin: 0; } }
       .card.card-company-list .card-company-list-col-body .card-body .card-company-list-info-right .card-company-list-further-products {
         position: relative; }
         .card.card-company-list .card-company-list-col-body .card-body .card-company-list-info-right .card-company-list-further-products:hover span {
@@ -9674,6 +9707,13 @@ h6, .h6 {
                 transition: none; } }
     .card.card-company-list .card-company-list-col-body .card-body .card-company-list-text {
       width: 100%; }
+      @media (max-width: 73.125rem) {
+        .card.card-company-list .card-company-list-col-body .card-body .card-company-list-text {
+          border-top: 1px solid #EBEBEF;
+          border-bottom: 1px solid #EBEBEF;
+          padding: 1rem;
+          margin: 0 -1rem 1rem;
+          width: auto; } }
 .card.card-news-preview .card-news-preview-title {
   color: #58586A;
   text-decoration: none; }
