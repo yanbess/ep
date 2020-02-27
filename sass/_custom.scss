@@ -439,6 +439,34 @@ img {
     padding: 1.5rem 0 .75rem;
   }
   
+  &.with-img {
+    position: relative;
+    
+    > * {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+    }
+    
+    .breadcrumb a, .categories-statistic > div .count b {
+      color: #fff;
+    }
+    
+    .icon-fill-dark {
+      background-color: #fff;
+    }
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: linear-gradient(100.23deg, #011E3C 0%, rgba(1, 30, 60, 0.4) 100%);
+    }
+  }
+  
   .breadcrumb {
     padding: 0;
     margin: 0 0 1.5rem;
