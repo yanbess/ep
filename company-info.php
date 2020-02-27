@@ -94,7 +94,7 @@
         <section class="company-info">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-xl-3">
                         <ul class="sidebar-info">
                             <li>
                                 <i class="icon icon-fill-dark icon-s icon-worldwide"></i>
@@ -119,7 +119,7 @@
                         </ul>
                         <div class="clearfix"></div>
                     </div>
-                    <div class="col-xl-8">
+                    <div class="col-xl-9">
                         <p class="subtitle-m"><b>Über das Unternehmen.</b></p>
                         <p>Seit 1969 ist das Familienunternehmen als Electronic Distributor Vertragspartner von Premium-Herstellern elektromechanischer Bauteile. Der Handel mit Steckverbindungen, Relais, Schaltern, Kabeln, Werkzeugen, Kunststoffartikeln und elektrischen Bauelementen findet weltweit statt. Die eigene Kabelkonfektion ist die Ergänzung zum Handel und bietet kundenspezifische, qualitativ hochwertige Lösungen.</p>
                         <div class="row d-none d-xl-flex">
@@ -151,6 +151,11 @@
 
         <?php include 'footer.php'; ?>
 
+        <script>
+            $(document).ready(function(){
+                $('.company-header + *').offset().top;
+            })
+        </script>
   </body>
 
 </html>

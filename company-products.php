@@ -94,7 +94,7 @@
         <section class="company-products py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-xl-3">
                         <div class="sidebar-filters">
                             <p class="body-heading-m js-filters-toggle">
                                 <b>Produkte und Dienstleistungen <br>von EPCOS AG</b> 
@@ -124,7 +124,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-xl-8">
+                    <div class="col-xl-9">
                         <?php for($i = 0; $i < 9; $i++) { ?>
                         <div class="card card-product-preview card-hover mb-2">
                             <div class="row no-gutters">

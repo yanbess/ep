@@ -10344,6 +10344,26 @@ img {
 .flex-nowrap {
   flex-wrap: nowrap; }
 
+/* Other */
+#back_top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 8;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #E3E3E8;
+  background: #fff;
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  cursor: pointer;
+  border-radius: .5rem;
+  border: 0; }
+
+#back_top:hover {
+  background: #EBEBEF; }
+
 .logo-text-s {
   width: 8.5rem;
   height: 2.5rem;
