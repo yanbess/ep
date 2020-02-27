@@ -404,12 +404,133 @@ img {
 }
 
 .dots-list {
-    padding-left: 1rem;
+  padding-left: 1rem;
+  margin: 0 0 1.5rem;
+  line-height: 1.45;
+  color: #58586A;
+
+  li:not(:last-child) {
+    margin: 0 0 .5rem;
+  }
+}
+
+
+.companies-header {
+  background: #fff;
+  padding: 2.5rem 0 3rem;
+  
+  @media (max-width: $content-box-body-width) {
+    padding: 1.5rem 0 .75rem;
+  }
+  
+  .breadcrumb {
+    padding: 0;
     margin: 0 0 1.5rem;
-    line-height: 1.45;
-    color: #58586A;
+    background: transparent;
     
-    li:not(:last-child) {
-        margin: 0 0 .5rem;
+    a {
+      color: #2C2F3A;
+      text-decoration: none;
     }
+  }
+}
+.categories-statistic {
+  display: flex;
+  align-items: center;
+  
+  @media (max-width: $content-box-body-width) {
+    flex-wrap: wrap;
+  }
+  
+  > div {
+    display: flex;
+    align-items: center;
+    margin: 0 5rem 0 0;
+    line-height: 1;
+    
+    @media (max-width: $content-box-body-width) {
+      margin: 0 2rem 1.25rem 0;
+    }
+    
+    .icon {
+      margin: 0 1.5rem 0 0;
+      
+      @media (max-width: $content-box-body-width) {
+        margin: 0 1.25rem 0 0;
+      }
+    }
+    
+    .count {
+      font-size: 1.125rem;
+      line-height: 1.25rem;
+      color: #7B7B92;
+      font-weight: bold;
+      
+      @media (max-width: $content-box-body-width) {
+        font-size: 0.875rem;
+      }
+      
+      b {
+        display: block;
+        margin: .25rem 0 0;
+        color: #31313B;
+        font-size: 1.75rem;
+        line-height: 1.15;
+        
+        @media (max-width: $content-box-body-width) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.categories-filters {
+  margin: 0 0 2rem;
+}
+
+.active-filters {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  li {
+    margin: 0 .25rem .25rem 0;
+  }
+}
+.companies-list {
+    .h4 {
+        margin: 0 0 2rem;
+    }
+}
+.sidebar-categories {
+  list-style-type: none;
+  padding-left: 0;
+  
+  li {
+    margin: 0 0 .25rem;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+}
+
+.gray {
+  color: #7B7B92;
+}
+
+.btn.btn-orange-o {
+  background: transparent;
+  color: #EA2727;
+  border: 1px solid #EA2727;
+  
+  &:hover, &:focus {
+    color: #fff;
+    background-color: #FA6705;
+    border-color: #FA6705;
+  }
 }

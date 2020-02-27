@@ -10035,6 +10035,93 @@ img {
   .dots-list li:not(:last-child) {
     margin: 0 0 .5rem; }
 
+.companies-header {
+  background: #fff;
+  padding: 2.5rem 0 3rem; }
+  @media (max-width: 73.125rem) {
+    .companies-header {
+      padding: 1.5rem 0 .75rem; } }
+  .companies-header .breadcrumb {
+    padding: 0;
+    margin: 0 0 1.5rem;
+    background: transparent; }
+    .companies-header .breadcrumb a {
+      color: #2C2F3A;
+      text-decoration: none; }
+
+.categories-statistic {
+  display: flex;
+  align-items: center; }
+  @media (max-width: 73.125rem) {
+    .categories-statistic {
+      flex-wrap: wrap; } }
+  .categories-statistic > div {
+    display: flex;
+    align-items: center;
+    margin: 0 5rem 0 0;
+    line-height: 1; }
+    @media (max-width: 73.125rem) {
+      .categories-statistic > div {
+        margin: 0 2rem 1.25rem 0; } }
+    .categories-statistic > div .icon {
+      margin: 0 1.5rem 0 0; }
+      @media (max-width: 73.125rem) {
+        .categories-statistic > div .icon {
+          margin: 0 1.25rem 0 0; } }
+    .categories-statistic > div .count {
+      font-size: 1.125rem;
+      line-height: 1.25rem;
+      color: #7B7B92;
+      font-weight: bold; }
+      @media (max-width: 73.125rem) {
+        .categories-statistic > div .count {
+          font-size: 0.875rem; } }
+      .categories-statistic > div .count b {
+        display: block;
+        margin: .25rem 0 0;
+        color: #31313B;
+        font-size: 1.75rem;
+        line-height: 1.15; }
+        @media (max-width: 73.125rem) {
+          .categories-statistic > div .count b {
+            font-size: 1rem; } }
+
+.categories-filters {
+  margin: 0 0 2rem; }
+
+.active-filters {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+  .active-filters li {
+    margin: 0 .25rem .25rem 0; }
+
+.companies-list .h4 {
+  margin: 0 0 2rem; }
+
+.sidebar-categories {
+  list-style-type: none;
+  padding-left: 0; }
+  .sidebar-categories li {
+    margin: 0 0 .25rem; }
+  .sidebar-categories a {
+    text-decoration: none; }
+
+.gray {
+  color: #7B7B92; }
+
+.btn.btn-orange-o {
+  background: transparent;
+  color: #EA2727;
+  border: 1px solid #EA2727; }
+  .btn.btn-orange-o:hover, .btn.btn-orange-o:focus {
+    color: #fff;
+    background-color: #FA6705;
+    border-color: #FA6705; }
+
 .logo-text-s {
   width: 8.5rem;
   height: 2.5rem;
