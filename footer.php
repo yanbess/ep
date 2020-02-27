@@ -3,8 +3,8 @@
         <div class="footer-col">
             <h6 class="footer-col-title">Allgemein</h6>
             <div class="footer-col-links">
-                <a href="#">AGB &amp; Nutzungsbedingungen</a><br>
-                <a href="#">Datenschutz &amp; Cookies</a><br>
+                <a href="#">AGB & Nutzungsbedingungen</a><br>
+                <a href="#">Datenschutz & Cookies</a><br>
                 <a href="#">Impressum</a>
             </div>
         </div>

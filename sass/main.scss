@@ -191,36 +191,50 @@ $content-box-body-width: 73.125rem;
         height: 4rem;
       }
 
-      .header-mobile-right-button {
-        display: none;
-        @media (max-width: $content-box-body-width) {
-          display: block;
-          width: 4rem;
-          height: 4rem;
-          float: right;
-          text-align: center;
-          padding-top: 1.25rem;
-          cursor: pointer;
+      .header-mobile-right-buttons {
+        left: 11.5rem;
+        position: absolute;
+        right: 0;
+
+        .header-mobile-right-button {
+          display: none;
+          @media (max-width: $content-box-body-width) {
+            display: block;
+            width: 4rem;
+            height: 4rem;
+            float: right;
+            text-align: center;
+            padding-top: 1.25rem;
+            cursor: pointer;
+          }
+
+          .icon {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+
+          @media (max-width: 24rem) {
+            width: 33%;
+          }
         }
 
-        .icon {
-          width: 1.5rem;
-          height: 1.5rem;
+        .header-search-mobile {
+
         }
-      }
 
-      .header-search-mobile {
-
-      }
-
-      .header-language-mobile {
-        .header-language-mobile-close {
-          display: inline-block;
+        .header-language-mobile {
+          .header-language-mobile-close {
+            display: inline-block;
+          }
         }
-      }
 
-      .header-catalog-mobile {
+        .header-catalog-mobile {
 
+        }
+
+        .header-catalog-mobile-close {
+          display: none;
+        }
       }
 
       .tooltip {
@@ -325,11 +339,6 @@ $content-box-body-width: 73.125rem;
         }
       }
 
-
-      .header-catalog-mobile-close {
-        display: none;
-      }
-
       .header-logo-line {
         display: none;
         @media (max-width: $content-box-body-width) {
@@ -380,7 +389,7 @@ $content-box-body-width: 73.125rem;
           border-bottom: 0;
           border-top-left-radius: 1rem;
           border-top-right-radius: 1rem;
-          padding-bottom: 1.49rem;
+          padding-bottom: 1.41rem;
 
           .icon-menu {
             display: none;
