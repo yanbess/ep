@@ -134,7 +134,7 @@
       <div class="row company-news">
           <?php for($i = 0; $i < 6; $i++) { ?>
             <div class="col-xl-4">
-                <div class="card card-news-preview card-hover">
+                <div class="card surface card-news-preview card-hover">
                     <div class="row no-gutters">
                         <div class="col card-news-preview-col-image" style="background: #ccc;"></div>
                         <div class="col">

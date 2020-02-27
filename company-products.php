@@ -165,7 +165,7 @@
                     </div>
                     <div class="col-xl-9">
                         <?php for($i = 0; $i < 9; $i++) { ?>
-                        <div class="card card-product-preview card-hover mb-2">
+                        <div class="card surface card-product-preview card-hover mb-2">
                             <div class="row no-gutters">
                                 <div class="card-product-img-box">
                                   <div class="col card-product-preview-col-image" style="background-image: url('/img/products/image 2-1.jpg');"></div>

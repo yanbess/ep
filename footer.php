@@ -50,10 +50,16 @@
                     <i class="icon icon-fill-gray-500 icon-s icon-time mr-3"></i>
                     10.11.2018 23:00
                 </p>
-                <p class="h5">"Verbesserte Lieferstruktur der DEUTSCH Produkte bei Börsig" von Börsig GmbH Electronic-Distributor</p>
+                <p class="h5">"Verbesserte Lieferstruktur der DEUTSCH Produkte bei Börsig" von Börsig GmbH
+                    Electronic-Distributor</p>
                 <img class="mb-3" src="img/news.png" alt="">
-                <p>Seit 2017 ist Börsig offizieller Distributor für DEUTSCH Produkte des Herstellers TE Connectivity. Die Nachfrage am Markt ist kontinuierlich gestiegen, ein Grund für Börsig sich die komplette Produktserie auf Lager zu legen sowie die Preisstruktur zu verbessern.</p>
-                <p>Der Electronic-Distributor Börsig aus Neckarsulm hat vom weltgrößten Hersteller von Anschlusslösungen – TE Connectivity – bereits 2017 das offizielle Distributionsrecht für die DEUTSCH Produkte erhalten. Bei den DEUTSCH Serien handelt es sich um Produkte, welche für Anwendungen im Bereich der industriellen und gewerblichen Transporte</p>
+                <p>Seit 2017 ist Börsig offizieller Distributor für DEUTSCH Produkte des Herstellers TE Connectivity.
+                    Die Nachfrage am Markt ist kontinuierlich gestiegen, ein Grund für Börsig sich die komplette
+                    Produktserie auf Lager zu legen sowie die Preisstruktur zu verbessern.</p>
+                <p>Der Electronic-Distributor Börsig aus Neckarsulm hat vom weltgrößten Hersteller von Anschlusslösungen
+                    – TE Connectivity – bereits 2017 das offizielle Distributionsrecht für die DEUTSCH Produkte
+                    erhalten. Bei den DEUTSCH Serien handelt es sich um Produkte, welche für Anwendungen im Bereich der
+                    industriellen und gewerblichen Transporte</p>
             </div>
         </div>
     </div>
@@ -67,6 +73,8 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 <script src="js/jquery.fancybox.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
 <script>
     $(function () {
         $('[data-toggle="tooltip"]').tooltip();
@@ -167,9 +175,8 @@
                 $('.header-language-tooltip').removeClass('show');
             }
         });
-    
+
         // to top button
-        
         $(document).ready(function () {
             $(document.body).append('<button type="button" id="back_top"><i class="icon icon-fill-dark icon-s icon-arrow-up"></i></button>');
             $('#back_top').hide();

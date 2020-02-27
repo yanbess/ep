@@ -71,7 +71,7 @@
                     </div>
                     <div class="card-body">
                         <?php for($i = 0; $i < 4; $i++) { ?>
-                        <div class="card card-news-preview card-hover mb-2">
+                        <div class="card surface card-news-preview card-hover mb-2">
                             <div class="row no-gutters">
                                 <div class="col card-news-preview-col-image" style="background: #ccc;/*background-image: url('/img/companies/image 2-1.jpg');*/"></div>
                                 <div class="col">
