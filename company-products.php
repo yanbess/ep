@@ -128,10 +128,15 @@
                         <?php for($i = 0; $i < 9; $i++) { ?>
                         <div class="card card-product-preview card-hover mb-2">
                             <div class="row no-gutters">
-                                <div class="col card-product-preview-col-image" style="background-image: url('/img/products/image 2-1.jpg');"></div>
+                                <div class="card-product-img-box">
+                                  <div class="col card-product-preview-col-image" style="background-image: url('/img/products/image 2-1.jpg');"></div>
+                                  <p class="card-product-preview-title d-block d-xl-none mb-0">
+                                    <a href="#"><b>Temperatursensoren</b></a>
+                                  </p>
+                                </div>
                                 <div class="col">
                                     <div class="card-body">
-                                        <p class="card-product-preview-title">Temperatursensoren</p>
+                                        <p class="card-product-preview-title d-none d-xl-block">Temperatursensoren</p>
                                         <div class="card-product-preview-title-text">Facilisis arcu, congue massa quisque. Aliquam
                                             adipiscing vitae morbi feugiat
                                             senectus arcu. Accumsan, praesent sed neque dolor ut duis egestas. Tempor leo viverra sem
@@ -139,7 +144,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="d-none d-xl-block">
                                     <div class="card-body">
                                         <a href="company-product.php" class="btn btn-icon btn-icon-right btn-outline-ghost btn-sm card-company-list-details-btn">DETAILS<i class="icon icon-arrow-follow icon-fill-dark"></i></a>
                                     </div>
