@@ -9529,6 +9529,17 @@ h6, .h6 {
     background-repeat: no-repeat; }
   .card.card-category .card-text {
     color: #31313B; }
+@media (max-width: 73.125rem) {
+  .card.card-product-preview .row {
+    flex-direction: column; } }
+@media (max-width: 73.125rem) {
+  .card.card-product-preview .card-product-img-box {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem 0; }
+    .card.card-product-preview .card-product-img-box a {
+      color: #31313B;
+      text-decoration: none; } }
 .card.card-product-preview .card-product-preview-col-image {
   width: 6rem;
   height: 5.5rem;
@@ -9537,6 +9548,12 @@ h6, .h6 {
   max-width: 6rem;
   background-size: cover;
   background-repeat: no-repeat; }
+  @media (max-width: 73.125rem) {
+    .card.card-product-preview .card-product-preview-col-image {
+      width: 5rem;
+      height: 3.5rem;
+      margin: 0 1rem 0 0;
+      background-size: contain; } }
 .card.card-company {
   text-decoration: none; }
   .card.card-company .card-img-top {

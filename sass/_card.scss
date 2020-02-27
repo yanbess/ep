@@ -45,6 +45,25 @@ $content-box-body-width: 73.125rem;
   }
 
   &.card-product-preview {
+    .row {
+      @media(max-width: $content-box-body-width) {
+        flex-direction: column;
+      }
+    }
+    
+    .card-product-img-box {
+      @media(max-width: $content-box-body-width) {
+        display: flex;
+        align-items: center;
+        padding: 1rem 1rem 0;
+        
+        a {
+          color: #31313B;
+          text-decoration: none;
+        }
+      }
+    }
+    
     .card-product-preview-col-image {
       width: 6rem;
       height: 5.5rem;
@@ -53,6 +72,13 @@ $content-box-body-width: 73.125rem;
       max-width: 6rem;
       background-size: cover;
       background-repeat: no-repeat;
+      
+      @media(max-width: $content-box-body-width) {
+        width: 5rem;
+        height: 3.5rem;
+        margin: 0 1rem 0 0;
+        background-size: contain;
+      }
     }
 
     .card-body {
@@ -199,7 +225,7 @@ $content-box-body-width: 73.125rem;
               margin: 0 0 .5rem;
             }
             
-            .icon {
+            .icon { 
               margin: 0 .5rem 0 0;
             }
           }

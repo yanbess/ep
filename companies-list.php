@@ -174,7 +174,7 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <a href="#" class="btn btn-icon btn-icon-right btn-outline-ghost btn-sm card-company-list-details-btn">DETAILS<i class="icon icon-arrow-follow icon-fill-dark"></i></a>
+                                            <a href="company-info.php" class="btn btn-icon btn-icon-right btn-outline-ghost btn-sm card-company-list-details-btn">DETAILS<i class="icon icon-arrow-follow icon-fill-dark"></i></a>
                                         </div>
                                         <div class="card-company-list-text body-s order-0">Das Familienunternehmen BENEDICT aus Österreich
                                             erzeugt Niederspannungs-Schaltgeräte die sich durch besondere Merkmale von ihren
