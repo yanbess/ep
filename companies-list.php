@@ -18,7 +18,7 @@
                         <li class="breadcrumb-item active">Elektrotechnik</li>
                     </ol>
                 </nav>
-                <h1 class="mb-4">Elektrotechnik</h1>
+                <h1 class="mb-4 h3">Elektrotechnik</h1>
                 <div class="categories-statistic">
                     <div>
                         <i class="icon icon-fill-dark icon-exporters"></i>

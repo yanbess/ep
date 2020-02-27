@@ -274,6 +274,44 @@
     </div>
 
     <div class="m-4 float-left">
+        <div class="form-group">
+            <div class="dropdown dropdown-filter-search">
+                <input type="text" class="dropdown-toggle dropdown-filter-search-button form-control"
+                       id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-filter-search-field-box">
+                        <input type="text" placeholder="Suche Land...">
+                        <i class="icon icon-fill-dark icon-s icon-search"></i>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-filter-search-clean">Aufräumen</div>
+                    <div class="dropdown-item">
+                        <i class="icon icon-fill-dark icon-s icon-placeholder"></i>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="dropdown_item_1">
+                            <label class=" custom-control-label" for="dropdown_item_1">Österreich</label>
+                        </div>
+                    </div>
+                    <div class="dropdown-item">
+                        <i class="icon icon-fill-dark icon-s icon-placeholder"></i>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="dropdown_item_2">
+                            <label class=" custom-control-label" for="dropdown_item_2">Österreich</label>
+                        </div>
+                    </div>
+                    <div class="dropdown-item">
+                        <i class="icon icon-fill-dark icon-s icon-placeholder"></i>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="dropdown_item_3">
+                            <label class=" custom-control-label" for="dropdown_item_3">Österreich</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-4 float-left">
         <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
                 title="Tooltip on top">
             Tooltip on top
@@ -458,7 +496,8 @@
                     </div>
                     <div class="header-mobile-right-button header-language-mobile">
                         <i class="icon icon-flag-size icon-DE header-language-mobile-flag"></i>
-                        <i class="icon icon-fill-dark icon-s icon-close header-language-mobile-close" style="display: none;"></i>
+                        <i class="icon icon-fill-dark icon-s icon-close header-language-mobile-close"
+                           style="display: none;"></i>
                     </div>
 
                     <div class="tooltip bs-tooltip-bottom header-language-tooltip-mobile">
@@ -540,7 +579,8 @@
                                     </div>
                                     <div class="custom-control custom-checkbox mb-3">
                                         <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                        <label class=" custom-control-label" for="customCheck3">Eingeloggt bleiben</label>
+                                        <label class=" custom-control-label" for="customCheck3">Eingeloggt
+                                            bleiben</label>
                                     </div>
                                     <button type="button" class="btn mb-3 btn-primary btn-sm w-100">Eintreten</button>
                                     <a href="#" class="header-login-pass-forg-link">Passwort zurücksetzen</a>

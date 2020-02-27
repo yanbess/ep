@@ -10370,7 +10370,7 @@ img {
 .content-box, .header, .header .header-catalog-list, .header .header-catalog-sublist, .footer, .submenu-listing {
   background: #fff;
   width: 100%;
-  display: inline-block; }
+  display: block; }
 
 .content-box-body, .header .header-catalog-list .header-catalog-list-body, .header .header-catalog-sublist .header-catalog-sublist-box, .header .header-body-outer .header-body, .footer .footer-body, .submenu-listing .submenu-listing-body {
   width: 73.125rem;
@@ -10784,7 +10784,8 @@ img {
     position: absolute;
     z-index: 30;
     top: 4rem;
-    width: 100%; }
+    width: 100%;
+    box-shadow: 0 16px 80px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.05); }
     .header .header-catalog-list-mobile > div {
       width: 100%;
       float: left;
@@ -11043,5 +11044,22 @@ img {
     display: inline-block; }
   .pagination-custom div.pagination-custom-page:hover {
     color: inherit; }
+
+.dropdown-filter-search .dropdown-filter-search-field-box {
+  margin: 0.75rem 1rem;
+  position: relative; }
+  .dropdown-filter-search .dropdown-filter-search-field-box input {
+    height: 1.375rem;
+    width: 100%;
+    border: 0;
+    font-family: "Lato", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Lato", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9375rem;
+    line-height: 145%;
+    color: #7B7B92; }
+  .dropdown-filter-search .dropdown-filter-search-field-box .icon-search {
+    position: absolute;
+    right: 0; }
 
 /*# sourceMappingURL=main.css.map */
