@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <?php include 'head.php'; ?>
+    <?php  include 'includes/head.php'; ?>
     <title>Hello, world!</title>
 </head>
 
   <body>
 
-    <?php include 'header.php'; ?>
+    <?php  include 'includes/header.php'; ?>
     
     <section class="container-fluid welcom">
         <img class="mb-3" src="img/logo-text-w.png" alt="">
@@ -92,7 +92,7 @@
         </div>
     </section>
 
-    <?php include 'footer.php'; ?>
+    <?php  include 'includes/footer.php'; ?>
     
   </body>
 

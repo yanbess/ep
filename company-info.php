@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <?php include 'head.php'; ?>
+    <?php  include 'includes/head.php'; ?>
     <title>Company page - Information</title>
 </head>
 
     <body>
 
-    <?php include 'header.php'; ?>
+    <?php  include 'includes/header.php'; ?>
     
         <div class="breadcrumb-wrapper" style="background-image:url(img/breadcrumb-wrapper.jpg);">
             <div class="container d-none d-md-block">
@@ -188,7 +188,7 @@
             </div>
         </section>
 
-        <?php include 'footer.php'; ?>
+        <?php  include 'includes/footer.php'; ?>
 
         <script>
             $(document).ready(function(){

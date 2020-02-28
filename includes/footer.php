@@ -56,7 +56,7 @@
                 </p>
                 <p class="h5">"Verbesserte Lieferstruktur der DEUTSCH Produkte bei Börsig" von Börsig GmbH
                     Electronic-Distributor</p>
-                <img class="mb-3" src="img/news.png" alt="">
+                <img class="mb-3" src="../img/news.png" alt="">
                 <p>Seit 2017 ist Börsig offizieller Distributor für DEUTSCH Produkte des Herstellers TE Connectivity.
                     Die Nachfrage am Markt ist kontinuierlich gestiegen, ein Grund für Börsig sich die komplette
                     Produktserie auf Lager zu legen sowie die Preisstruktur zu verbessern.</p>
@@ -76,7 +76,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-<script src="js/jquery.fancybox.js"></script>
+<script src="../js/jquery.fancybox.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
-<script src="js/main.js"></script>
+<script src="../js/main.js"></script>
