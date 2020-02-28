@@ -10477,6 +10477,75 @@ img {
 #back_top:hover {
   background: #EBEBEF; }
 
+.preload {
+  overflow: hidden; }
+  .preload .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .preload .preloader > div {
+      display: block;
+      position: relative;
+      height: 5rem;
+      width: 5rem; }
+      .preload .preloader > div:after {
+        content: '';
+        display: block;
+        height: 5rem;
+        width: 5rem;
+        border: 1px solid #FFE9D6;
+        border-radius: 50%;
+        position: absolute;
+        -webkit-animation: spinner linear infinite 6s;
+        animation-name: spinner linear infinite 6s; }
+      .preload .preloader > div:before {
+        content: '';
+        display: block;
+        height: 5rem;
+        width: 5rem;
+        border: 1px solid #FFE9D6;
+        border-radius: 50%;
+        background: url("../img/preloader.svg") no-repeat center center;
+        background-size: 3.2rem;
+        position: absolute;
+        -webkit-animation: spinner2 linear infinite 6s;
+        animation-name: spinner2 linear infinite 6s; }
+
+@-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotateY(0deg); }
+  to {
+    -webkit-transform: rotateY(-360deg); } }
+@keyframes spinner {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg); }
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg); } }
+@-webkit-keyframes spinner2 {
+  from {
+    -webkit-transform: rotateX(0deg); }
+  to {
+    -webkit-transform: rotateX(360deg); } }
+@keyframes spinner2 {
+  from {
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    transform: rotateX(0deg); }
+  to {
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    transform: rotateX(360deg); } }
 .logo-text-s {
   width: 8.5rem;
   height: 2.5rem;
@@ -10590,6 +10659,8 @@ img {
                 text-decoration: none;
                 margin-bottom: 0.65rem;
                 display: block; }
+                .header .header-catalog-sublist .header-catalog-sublist-box .header-catalog-sublist-box-col .header-catalog-sublist-list-box .header-catalog-sublist-body .header-catalog-header-catalog-sublist-item a:hover {
+                  text-decoration: underline; }
   .header .header-body-outer {
     position: relative;
     box-shadow: 0px -4px 32px rgba(0, 0, 0, 0.1);

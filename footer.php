@@ -41,6 +41,10 @@
     </div>
 </footer>
 
+<div class="preloader">
+    <div></div>
+</div>
+
 <div class="modal fade" id="newsCard" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -76,6 +80,16 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
 <script>
+    $('body').addClass('preload');
+    $(document).ready(function(){
+        setTimeout(function(){
+          $('.preloader').fadeOut();
+        }, 3000);
+        setTimeout(function(){
+          $('body').removeClass('preload');
+        }, 3400);
+    });
+  
     $(function () {
         $('[data-toggle="tooltip"]').tooltip();
         $('[data-toggle="tooltip-white"]').tooltip({

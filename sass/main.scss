@@ -169,6 +169,10 @@ $content-box-body-width: 73.125rem;
                 text-decoration: none;
                 margin-bottom: 0.65rem;
                 display: block;
+                
+                &:hover {
+                  text-decoration: underline;
+                }
               }
             }
           }
