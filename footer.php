@@ -41,6 +41,10 @@
     </div>
 </footer>
 
+<div class="preloader">
+    <div></div>
+</div>
+
 <div class="modal fade" id="newsCard" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">

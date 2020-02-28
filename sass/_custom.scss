@@ -578,6 +578,63 @@ img {
     }
   }
 }
+
+.companies-header.fixed {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  margin: 0;
+  transform: translateY(-100%);
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+  padding: 1.25rem 0;
+    
+  @media(min-width: $content-box-body-width) {
+    &.show {
+      opacity: 1;
+      z-index: 7;
+      pointer-events: initial;
+      transform: translateY(0);
+    }
+  }
+  
+  .h4 {
+    flex-grow: 1;
+  }
+  .categories-statistic {
+    justify-content: flex-end;
+    
+    > div {
+      margin-right: 1.5rem;
+      
+      &:last-child {
+        margin-right: 0;
+      }
+      
+      .icon {
+        margin-right: 1.25rem;
+      }
+
+      .count {
+        font-size: .875rem;
+        line-height: 1.2;
+
+        b {
+          font-size: 1rem;
+          line-height: 1.25;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
 .categories-statistic {
   display: flex;
   align-items: center;
@@ -693,7 +750,7 @@ img {
   flex-direction: column;
   text-align: center;
   min-height: 46.75rem;
-  background: url(../img/welcom-bg.png) no-repeat center top;
+  background: url(../img/welcom-bg.jpg) no-repeat center top;
   background-size: cover;
   font-size: 1.75rem;
   line-height: 1.15;
@@ -798,4 +855,96 @@ img {
 }
 #back_top:hover {
     background: #EBEBEF;
+}
+
+.preload {
+  overflow: hidden;
+  
+  .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    > div {
+      display: block;
+      position: relative;
+      height: 5rem;
+      width: 5rem;
+      
+      &:after {
+        content: '';
+        display: block;
+        height: 5rem;
+        width: 5rem;
+        border: 1px solid #FFE9D6;
+        border-radius: 50%;
+        position: absolute;
+        -webkit-animation: spinner linear infinite 6s; 
+        animation-name: spinner linear infinite 6s;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        height: 5rem;
+        width: 5rem;
+        border: 1px solid #FFE9D6;
+        border-radius: 50%;
+        background: url('../img/preloader.svg') no-repeat center center;
+        background-size: 3.2rem;
+        position: absolute;
+        -webkit-animation: spinner2 linear infinite 6s; 
+        animation-name: spinner2 linear infinite 6s;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes spinner { 
+  from { 
+    -webkit-transform: rotateY(0deg); 
+  } 
+  to { 
+    -webkit-transform: rotateY(-360deg); 
+  } 
+} 
+@keyframes spinner { 
+  from { 
+    -moz-transform: rotateY(0deg); 
+    -ms-transform: rotateY(0deg); 
+    transform: rotateY(0deg); 
+  } 
+  to { 
+    -moz-transform: rotateY(-360deg); 
+    -ms-transform: rotateY(-360deg); 
+    transform: rotateY(-360deg);
+  } 
+}
+
+@-webkit-keyframes spinner2 { 
+  from { 
+    -webkit-transform: rotateX(0deg); 
+  } 
+  to { 
+    -webkit-transform: rotateX(360deg); 
+  } 
+} 
+@keyframes spinner2 { 
+  from { 
+    -moz-transform: rotateX(0deg); 
+    -ms-transform: rotateX(0deg); 
+    transform: rotateX(0deg); 
+  } 
+  to { 
+    -moz-transform: rotateX(360deg); 
+    -ms-transform: rotateX(360deg); 
+    transform: rotateX(360deg);
+  } 
 }

@@ -33,7 +33,7 @@
                     </div>
                     <div class="card-body">
                         <?php for($i = 0; $i < 4; $i++) { ?>
-                        <a href="#" class="card surface card-company card-hover mb-2">
+                        <a href="company-info.php" class="card surface card-company card-hover mb-2">
                             <div class="card-img-top" style="background-image: url('/img/companies/image 2-1.jpg');"></div>
                             <div class="card-body">
                                 <p class="card-text">IDEC Elektrotechnik</p>
@@ -50,7 +50,7 @@
                     </div>
                     <div class="card-body">
                         <?php for($i = 0; $i < 5; $i++) { ?>
-                        <a href="#" class="card surface card-category card-hover mb-2">
+                        <a href="company-product.php" class="card surface card-category card-hover mb-2">
                             <div class="row no-gutters flex-nowrap">
                                 <div class="col card-category-col-image" style="background-image: url('/img/categories/image 2-1.jpg');"></div>
                                 <div class="col my-auto">
