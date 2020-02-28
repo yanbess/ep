@@ -277,34 +277,28 @@
         <div class="form-group">
             <div class="dropdown dropdown-filter-search">
                 <input type="text" class="dropdown-toggle dropdown-filter-search-button form-control"
-                       id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                       id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                       readonly value="Ausgewählt: 0">
+                <i class="icon icon-fill-dark icon-s icon-dropdown-open"></i>
+                <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuButton">
                     <div class="dropdown-filter-search-field-box">
                         <input type="text" placeholder="Suche Land...">
                         <i class="icon icon-fill-dark icon-s icon-search"></i>
                     </div>
                     <div class="dropdown-divider"></div>
                     <div class="dropdown-filter-search-clean">Aufräumen</div>
-                    <div class="dropdown-item">
-                        <i class="icon icon-fill-dark icon-s icon-placeholder"></i>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="dropdown_item_1">
-                            <label class=" custom-control-label" for="dropdown_item_1">Österreich</label>
-                        </div>
-                    </div>
-                    <div class="dropdown-item">
-                        <i class="icon icon-fill-dark icon-s icon-placeholder"></i>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="dropdown_item_2">
-                            <label class=" custom-control-label" for="dropdown_item_2">Österreich</label>
-                        </div>
-                    </div>
-                    <div class="dropdown-item">
-                        <i class="icon icon-fill-dark icon-s icon-placeholder"></i>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="dropdown_item_3">
-                            <label class=" custom-control-label" for="dropdown_item_3">Österreich</label>
-                        </div>
+                    <div class="dropdown-item-list">
+                        <?php foreach (['Österreich', 'Weißrussland', 'Belgien', 'Österreich', 'Österreich', 'Weißrussland', 'Belgien', 'Österreich', 'Österreich', 'Weißrussland', 'Belgien', 'Österreich'] as $i => $name) { ?>
+                            <div class="dropdown-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input"
+                                           id="dropdown_item_<?php echo $i; ?>">
+                                    <label class=" custom-control-label" for="dropdown_item_<?php echo $i; ?>"><?php echo $name; ?></label>
+                                    <i class="icon icon-fill-dark icon-s icon-placeholder"></i>
+                                </div>
+                            </div>
+
+                        <?php } ?>
                     </div>
                 </div>
             </div>
