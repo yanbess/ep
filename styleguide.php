@@ -278,7 +278,7 @@
             <div class="dropdown dropdown-filter-search">
                 <input type="text" class="dropdown-toggle dropdown-filter-search-button form-control"
                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                       readonly value="Ausgewählt: 0">
+                       readonly value="Bitte auswählen...">
                 <i class="icon icon-fill-dark icon-s icon-dropdown-open"></i>
                 <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuButton">
                     <div class="dropdown-filter-search-field-box">

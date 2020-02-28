@@ -89,9 +89,61 @@
                             <div class="card-body p-3">
                                 <form>
                                     <label class="mb-3">Unternehmensland</label>
-                                    <p><em>тут будет выпадающий список</em></p>
+                                    <div class="dropdown dropdown-filter-search mb-3">
+                                        <input type="text" class="dropdown-toggle dropdown-filter-search-button form-control"
+                                               id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                               readonly value="Bitte auswählen...">
+                                        <i class="icon icon-fill-dark icon-s icon-dropdown-open"></i>
+                                        <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuButton">
+                                            <div class="dropdown-filter-search-field-box">
+                                                <input type="text" placeholder="Suche Land...">
+                                                <i class="icon icon-fill-dark icon-s icon-search"></i>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="dropdown-filter-search-clean">Aufräumen</div>
+                                            <div class="dropdown-item-list">
+                                                <?php foreach (['Österreich', 'Weißrussland', 'Belgien', 'Österreich', 'Österreich', 'Weißrussland', 'Belgien', 'Österreich', 'Österreich', 'Weißrussland', 'Belgien', 'Österreich'] as $i => $name) { ?>
+                                                    <div class="dropdown-item">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                   id="dropdown_item_<?php echo $i; ?>">
+                                                            <label class=" custom-control-label" for="dropdown_item_<?php echo $i; ?>"><?php echo $name; ?></label>
+                                                            <i class="icon icon-fill-dark icon-s icon-placeholder"></i>
+                                                        </div>
+                                                    </div>
+
+                                                <?php } ?>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <label class="mb-3">Unternehmensland</label>
-                                    <p><em>тут будет выпадающий список</em></p>
+                                    <div class="dropdown dropdown-filter-search mb-3">
+                                        <input type="text" class="dropdown-toggle dropdown-filter-search-button form-control"
+                                               id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                               readonly value="Bitte auswählen...">
+                                        <i class="icon icon-fill-dark icon-s icon-dropdown-open"></i>
+                                        <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuButton">
+                                            <div class="dropdown-filter-search-field-box">
+                                                <input type="text" placeholder="Suche Land...">
+                                                <i class="icon icon-fill-dark icon-s icon-search"></i>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="dropdown-filter-search-clean">Aufräumen</div>
+                                            <div class="dropdown-item-list">
+                                                <?php foreach (['Österreich', 'Weißrussland', 'Belgien', 'Österreich', 'Österreich', 'Weißrussland', 'Belgien', 'Österreich', 'Österreich', 'Weißrussland', 'Belgien', 'Österreich'] as $i => $name) { ?>
+                                                    <div class="dropdown-item">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                   id="dropdown_item_<?php echo $i; ?>-2">
+                                                            <label class=" custom-control-label" for="dropdown_item_<?php echo $i; ?>-2"><?php echo $name; ?></label>
+                                                            <i class="icon icon-fill-dark icon-s icon-placeholder"></i>
+                                                        </div>
+                                                    </div>
+
+                                                <?php } ?>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
                                         <label class="custom-control-label" for="customCheck1">Nur zertifizierte Exporteure</label>

@@ -156,26 +156,6 @@ $(function () {
 
 });
 
-/*function DropdownFilterSearch_searchAndFilter() {
-    // Declare variables
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById('myInput');
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName('li');
-
-    // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}*/
-
 function DropdownFilterSearch_searchAndFilter(obj) {
     var value = obj.val().toLowerCase();
     obj.closest(".dropdown-menu").find('.dropdown-item-list .dropdown-item').filter(function () {
@@ -185,5 +165,6 @@ function DropdownFilterSearch_searchAndFilter(obj) {
 
 function DropdownFilterSearch_setNumberChecked(obj) {
     var numberChecked = obj.closest(".dropdown-menu").find('input:checkbox:checked').length;
-    obj.closest(".dropdown-filter-search").find('.dropdown-filter-search-button').val('Ausgewählt: ' + numberChecked);
+    var value = numberChecked ? 'Ausgewählt: ' + numberChecked : 'Bitte auswählen...';
+    obj.closest(".dropdown-filter-search").find('.dropdown-filter-search-button').val(value);
 }
