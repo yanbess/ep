@@ -2077,6 +2077,7 @@ img {
     right: 0.875rem;
     margin-top: -0.5625rem;
     display: block;
+    pointer-events: none;
   }
 
   .form-control[readonly] {
@@ -2186,4 +2187,19 @@ img {
 
   }
 
+}
+
+.footer-info {
+  background: #fff;
+  width: 100%;
+  float: left;
+
+  .footer-info-body {
+    max-width: 60.625rem;
+    margin: 0 auto;
+    padding: 5rem 0;
+    @media(max-width: $content-box-body-width) {
+      padding: 2rem 1rem;
+    }
+  }
 }

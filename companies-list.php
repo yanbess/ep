@@ -48,7 +48,7 @@
                 </div>
             </div>
         </section>
-        
+
         <div class="companies-header fixed">
             <div class="container d-flex align-items-center">
                 <p class="h4 m-0">Elektrotechnik</p>
@@ -80,7 +80,7 @@
                 </div>
             </div>
         </div>
-        
+
         <section class="companies-list py-3 py-xl-5">
             <div class="container">
                 <div class="row">
@@ -152,7 +152,7 @@
                             </div>
                         </div>
                         <p class="d-none d-xl-block body-heading-m">
-                            <b>Unterkategorien</b> 
+                            <b>Unterkategorien</b>
                         </p>
                         <ul class="d-none d-xl-block sidebar-categories">
                             <li>
@@ -288,6 +288,14 @@
                 </div>
             </div>
         </section>
+
+        <div class="footer-info">
+            <div class="footer-info-body">
+            Facilisis arcu, congue massa quisque. Aliquam adipiscing vitae morbi feugiat senectus arcu. Accumsan, praesent sed neque dolor ut duis egestas. Tempor leo viverra sem in. Viverra vulputate sem scelerisque porttitor eget ligula sed risus. Consectetur ut etiam sapien elementum ac at dolor. Sapien, leo penatibus nec facilisi sit habitasse pellentesque quisque pellentesque. Dolor quis aliquam eget cras nulla.<br>
+            In non non scelerisque sed amet tortor maecenas sem faucibus. Proin sagittis, ac pulvinar nibh ultrices molestie nisl, cursus. Laoreet amet id orci, sed sit elit purus. Lacus, tellus lectus orci id nulla augue. Elementum metus, vitae at mollis mauris, enim semper in amet. Neque nunc arcu pharetra dignissim adipiscing. Magna rhoncus condimentum ipsum, pulvinar suspendisse nisi, facilisis facilisis tortor.<br>
+            Rhoncus egestas sed turpis auctor ac quis ut lacus nulla. Auctor ac tristique volutpat euismod. Tempor massa bibendum varius nisl interdum fames porta dolor, lobortis. Aenean lectus morbi interdum est sit donec viverra eu. Nisl, pellentesque odio lobortis et id lacus in iaculis. Ut turpis volutpat eget erat ut amet, adipiscing odio nisl. Sit felis nulla viverra massa tortor, feugiat. Eget vitae dolor ipsum odio in sit urna. Id pulvinar velit magna risus. Morbi pretium felis euismod ornare consequat. Ipsum sed feugiat at id pellentesque. Vestibulum egestas ultrices cursus eget cursus enim. Arcu etiam mi phasellus fusce at sed amet libero tortor.
+            </div>
+        </div>
 
         <?php  include 'includes/footer.php'; ?>
 
