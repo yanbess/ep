@@ -1150,6 +1150,10 @@ img {
         width: 100%;
         height: 4rem;
       }
+      @media (min-width: $content-box-body-width) {
+        display: flex;
+        align-items: flex-start;
+      }
 
       .header-mobile-right-buttons {
         left: 11.5rem;
@@ -1390,6 +1394,11 @@ img {
         @media (max-width: $content-box-body-width) {
           display: none;
         }
+        
+        @media (min-width: $content-box-body-width) {
+          flex-grow: 1;
+          width: auto;
+        }
 
         input {
           border-top-left-radius: 1.5rem;
@@ -1457,6 +1466,14 @@ img {
         float: left;
         cursor: pointer;
         position: relative;
+        
+        @media (min-width: $content-box-body-width) {
+          flex-grow: 1;
+          margin: 1.5rem auto 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
 
         .tooltip {
           display: none;
